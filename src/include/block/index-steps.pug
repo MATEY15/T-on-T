@@ -1,0 +1,80 @@
+block variables
+	-var adviceSupport = ["Whatever your situation, you’re not alone. Explore our advice and support archive for helpful insights and guidance."]
+	-var support1 = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit magna, maximus eu luctus dapibus, vestibulum in."]
+
+section.care-step
+	.container
+		.care-step--wrapper
+			+heading("3 EASY STEPS", "Getting started with your home care.")
+			.care-step--main.owl-mobile.owl-carousel
+				.care-step--items.arrot-top---next
+					.steps
+						.steps-img
+							img(src="img/step1.svg", alt="")
+						h3 Step 1
+						p
+							| Choose what you would
+							br
+							| like help with.
+						span Once we know what you want, we will match you with suitable carers in your area.
+				.care-step--items.arrot-bottom---next
+					.steps
+						.steps-img
+							img(src="img/step2.svg", alt="")
+						h3 Step 2
+						p
+							| Select one of our trusted
+							br
+							| carers.
+						span We help you review carer profiles and choose one that best meets your needs.
+				.care-step--items
+					.steps
+						.steps-img
+							img(src="img/step3.svg", alt="")
+						h3 Step 3
+						p 
+							| Book a carer to your
+							br
+							| home.
+						span Arrange an appointment and pay online. If you are not happy you can cancel at any time.
+			.container
+				.mobile-navigation
+					.slider_dot
+					.slider_nav
+			.button--care-step
+				a(href="#").btn.btn-white.size-btn
+					span Learn more
+
+section.advice-support
+	.container
+		+heading("INFORMATION", "Advice & support", adviceSupport)
+		.advice-support--main
+			.advice-support--items
+				+post("#", "img/support1.jpg", "ABOUT US", "Getting started", support1)
+			.advice-support--items
+				+post("#", "img/support2.jpg", "HOW IT WORKS", "Understanding home care", support1, "Jul 8, 2019")
+			.advice-support--items
+				+post("#", "img/support1.jpg", "SPECIALIST CARE", "Choosing the right care for your loved ones", support1, "Jul 8, 2019")
+		.button-wrapper
+			a(href="#").btn.btn-white.size-btn
+				span view more
+
+section.testimonials
+	.bg-testimonials
+	.container
+		+heading("TESTIMONIALS", "What our customers say")
+	.slider-testimonials.owl-carousel
+		.item
+			include index-testimonials
+		.item
+			include index-testimonials
+		.item
+			include index-testimonials
+		.item
+			include index-testimonials
+		.item
+			include index-testimonials
+	.container
+		.wrapper-navigation
+			.slider_dot
+			.slider_nav

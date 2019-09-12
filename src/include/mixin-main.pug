@@ -1,0 +1,104 @@
+mixin care(link, imgSrc, desc)
+	a(href= link).care
+		span.care-img
+			img(src= imgSrc, alt= desc)
+		p 
+			=desc
+			br
+			| care
+
+mixin heading(desc, names, text)
+	.heading-main
+		span.head-line--desc= desc
+		h2= names
+		p= text
+
+mixin headingLeft(names, text)
+	.heading-main.heading-main--left
+		h2= names
+		p= text
+
+mixin headingRepeat(desc, names, text)
+	.heading-main.heading-offset
+		span.head-line--desc= desc
+		h2= names
+		p= text
+
+mixin headingSmall(desc, names, text)
+	.heading-main.heading-small
+		span.head-line--desc= desc
+		h2= names
+		p= text
+
+mixin headingMini(desc, names, text)
+	.heading-mini
+		span.head-line--desc= desc
+		h2= names
+		p= text
+
+mixin post(link, src, headLine, name, text, date)
+	.post-default
+		.post-default--img
+			a(href= link)
+				img(src= src, alt="")
+		.post-default--text
+			span.head-line--post= headLine
+			h4= name
+			span.date-post= date
+			p.max-text--big= text
+			a(href= link).more-link
+				| Continue reading
+				svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+					use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")
+
+mixin post2(link, src, headLine, name, text)
+	.post-default
+		.post-default--img
+			a(href= link)
+				img(src= src, alt="")
+		.post-default--text
+			span.head-line--post= headLine
+			h4= name
+			p.max-text--big= text
+			a(href= link).more-link
+				| Continue reading
+				svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+					use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")
+
+mixin careTablet(link, text)
+	.home-care--tablet
+		span.radio-icon
+			img(src= link, alt= text)
+		p.home-care--text
+			=text
+			br
+			| care
+
+//- Footer Menu
+mixin footerMenu(links)
+	ul
+		for i in links
+			li
+				a(href=i.link)=i.name
+
+//- Menu Mobile
+mixin mobileMenu(links)
+	ul
+		for i in links
+			li
+				a(href=i.link)=i.name
+
+//- Icon svg
+mixin sprite(width, height, viewBox, names)
+	svg(width=width height=height viewBox=viewBox class= names)
+		use(xlink:href="img/icon-svg/sprite-icon.svg#"+names)
+
+mixin categories(src, name, content)
+	.categories-item
+		a(href="#")
+			img(src= src, alt="")
+			.categories-item--text
+				h4= name
+				p= content
+				svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+					use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")

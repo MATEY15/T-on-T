@@ -1,0 +1,309 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Brief'
+	- var headers = true
+	- var textHeading = "Whatever support and care you need, we are here to help. We match you or your family with experienced, understanding and certified carers who can assist with everything from simple companionship and general assistance about the home, to more involved care for those with dementia or end of life needs - at prices you can afford."
+
+block header
+	include include/header
+
+	.header-content
+		.container
+			include include/header/content-two
+			
+block main
+	main.section_main
+		.container
+			include include/block/star-new
+
+		include include/block/form-block
+		
+		section
+			.container
+				.heading-main.heading-offset
+					span.head-line--desc TRUSTED CARERS
+					h2
+						| Care that’s right for you, as and when it’s needed
+						span.dotted-green .
+					p= textHeading
+
+		include include/block/slider-carer
+
+		include include/block/care-step
+
+		include include/block/advice-support
+
+		include include/block/vertical-step
+
+		include include/block/one-column
+
+		include include/block/looking-care
+
+		include include/block/advice-support-post
+
+		section.trusted-wrapper
+			.container
+				.trusted-care
+					.trusted--care-wrapper
+						.care--items
+							+care('#',"img/care-svg/icon-care1.svg", "Personal")
+						.care--items
+							+care('#',"img/care-svg/icon-care2.svg", "Dementia")
+						.care--items
+							+care('#',"img/care-svg/icon-care3.svg", "Alzheimers")
+						.care--items
+							+care('#',"img/care-svg/icon-care4.svg", "Respite")
+						.care--items
+							+care('#',"img/care-svg/icon-care5.svg", "End of life")
+						.care--items
+							+care('#',"img/care-svg/icon-care6.svg", "Cancer")
+						.care--items
+							+care('#',"img/care-svg/icon-care7.svg", "Companionship")
+						.care--items
+							a(href="#").find-care
+								p Find a carer
+								span.more-big
+									svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")
+		
+		section.testimonials
+			.bg-testimonials
+			.container
+				+heading("TESTIMONIALS", "What our customers say")
+			.slider-testimonials.owl-carousel
+				.item
+					include include/block/index-testimonials
+				.item
+					include include/block/index-testimonials
+				.item
+					include include/block/index-testimonials
+				.item
+					include include/block/index-testimonials
+				.item
+					include include/block/index-testimonials
+			.container
+				.wrapper-navigation
+					.slider_dot
+					.slider_nav
+
+		section.section-accordeon
+			.container
+				.accordeon-main
+					h3.heading-default
+						| Lorem ipsum dolor sit amet consectetur
+						span .
+					.accordeon
+						dl
+							dt.active Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+							dd Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.
+						dl
+							dt Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+							dd Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.
+						dl
+							dt Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+							dd Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.
+						dl
+							dt Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+							dd Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis. fermentum sed consectetur ut, malesuada vel felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.
+
+		section.section-content
+			.container
+				h3
+					| Lorem ipsum dolor sit amet
+					span .
+				.wrapper-column
+					.column-6
+						ul
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+					
+					.column-6
+						ul
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+							li Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing.
+
+				.section-content--btn
+					a(href="#").btn.btn-white.size-btn
+						span learn more
+
+		section.section-pricing.background-swirl
+			.container
+				.pricing-main(style="background-image: url(img/bg-pricing.jpg)")
+					h3 Find out more about our pricing
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.
+					a(href="#").btn.btn-whitebr.size-btn
+						span our pricing
+
+		section.section-stars
+			.container
+				.star-main
+					+heading("OUR REVIEWS", "What our customers say")
+
+					.satisfaction-rating
+						.satisfaction-rating--star.justive-center
+							.star-wrapper
+								span.star-article
+									svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+								span.star-article
+									svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+								span.star-article
+									svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+								span.star-article
+									svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+								span.star-article
+									svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+							span 4.8
+						.satisfaction-rating--content.text-center
+							h4 Average value for money rating
+							p based on 145 reviews since November 2018
+
+		section.section-video
+			.container
+				.video-main.background-swirl
+					.full-video
+						.content-media
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/CIqiB9zSLmM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		section.section-finds
+			.container
+				.wrapper-white--column
+					.white-block--big
+						.white-column
+							+headingMini("FIND A CARER", "Find a trusted, local carer today", "Simply let us know about the care you need, and we can match you with the most suitable carers for you.")
+
+							.looking-care--custom
+								h4 I’m looking for care for…
+								.step-radio--wrapper
+									label.radio
+										input(type="radio" name="radio_step_one")
+										p.radio__text Myself
+									label.radio
+										input(type="radio" name="radio_step_one" checked)
+										p.radio__text Someone else
+					
+					.white-block--small
+						.white-column
+							+headingMini("SPEAK TO US", "Request a callback", "If you’d prefer to speak to one of our friendly support team")
+
+							.request-small
+								p 
+									| Call us now on 
+									span 0808 278 1112 
+									| or
+								a(href="#").btn.btn-darkGreen.size-btn
+									span Request call back
+
+		section.section-home-care
+			.container
+				.home-care
+					+heading("TRUSTED CARERS", "Hourly home care that’s right for you", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.")
+
+					.home-care--wrapper
+						.home-care--item
+							+careTablet("img/icon-repeat/care--tablet1.svg", "Personal")
+						.home-care--item
+							+careTablet("img/icon-repeat/care--tablet2.svg", "Dementia")
+						.home-care--item
+							+careTablet("img/icon-repeat/care--tablet3.svg", "Respite")
+						.home-care--item
+							+careTablet("img/icon-repeat/care--tablet4.svg", "End of life")
+						.home-care--item
+							+careTablet("img/icon-repeat/care--tablet5.svg", "Cancer")
+						.home-care--item
+							+careTablet("img/icon-repeat/care--tablet6.svg", "Companionship")
+
+		section.section-location
+			.container
+				.location-main
+					.heading-location--mobile
+						+headingMini("OUR LOCATIONS", "Local carers in and around Banbury")
+					.location-city
+						+headingMini("OUR LOCATIONS", "Local carers in and around Banbury")
+
+						.list-city
+							h3.select-city Banbury
+							ul
+								li
+									a(href="#") Bloxham
+								li
+									a(href="#") Middleton Cheney
+								li
+									a(href="#") Adderbury
+								li
+									a(href="#") Aynho
+								li
+									a(href="#") Somerton
+								li
+									a(href="#") Upper Heyford
+								li
+									a(href="#") Lower Heyford 
+								li
+									a(href="#") Chipping Norton
+
+							
+								li
+									a(href="#") Chipping Norton
+								li
+									a(href="#") Adderbury
+								li
+									a(href="#") Aynho
+								li
+									a(href="#") Somerton
+								li
+									a(href="#") Upper Heyford
+								li
+									a(href="#") Lower Heyford 
+								li
+									a(href="#") Location name
+								li
+									a(href="#") Location name
+
+							
+								li
+									a(href="#") Chipping Norton
+								li
+									a(href="#") Adderbury
+								li
+									a(href="#") Aynho
+								li
+									a(href="#") Somerton
+								li
+									a(href="#") Upper Heyford
+								li
+									a(href="#") Lower Heyford 
+								li
+									a(href="#") Location name
+								li
+									a(href="#") Location name
+
+					.location-map
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39245.759809127456!2d-1.3736466923878288!3d52.064073010874786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870d4d3688e13e7%3A0xe0ff5e2eefa0ecaa!2sBanbury%2C+UK!5e0!3m2!1sen!2sua!4v1565356378730!5m2!1sen!2sua" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+		section.section--related-links
+			.container
+				.related-links
+					.related-links--heading
+						h3 Related links
+						p These links will open in a new window
+					ul
+						li
+							a(href="#") Elderly home care improves in Oxfordshire
+						li
+							a(href="#") Dementia care delays costing Britain’s elderly £15BN
+						li
+							a(href="#") Social care: Hunt and Johnson urged to consider NHS-style free service
+
+
+		include include/block/subscribe

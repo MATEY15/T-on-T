@@ -1,0 +1,19 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Home care services'
+
+block header
+	include include/header
+
+	.header-content
+		.container
+			include include/header/content-two
+
+block main
+	main.section_main
+
+		include include/block/form-block
+		include include/block/index-trust
+		include include/block/looking-care
+		include include/block/index-steps

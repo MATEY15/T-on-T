@@ -1,0 +1,910 @@
+header
+	position absolute
+	left 0
+	top 0
+	width 100%
+	z-index 1000
+	&.sticky-one
+		top -185px
+		position fixed
+		.header
+			.wrapper-header--flex
+				min-height 58px
+	&.sticky-two
+		top 0
+		box-shadow: 0 2px 16px 2px rgba(0,0,0,.09);
+		transition: all .3s cubic-bezier(.645,.045,.355,1)
+		.main-menu
+			ul.menu-top
+				.sub-menu
+					top 58px
+		.header-line--wrapper
+			background: #fff
+			.header-line
+				min-height 100%
+				padding-bottom 13px
+				.header-line--button
+					padding-bottom 0
+					.mobile-show
+						display block
+					.mobile-hide
+						display none
+				.logo-block
+					padding-top 0
+					&:before
+						display none
+					img
+						width 133px
+
+.header
+	background: #fff
+	width 100%
+	z-index 1000
+	
+	// &.sticky-one
+	// 	position fixed
+	// 	top -65px
+	// &.sticky-two
+	// 	position fixed
+	// 	top 0
+	// 	transition: all .3s cubic-bezier(.645,.045,.355,1)	
+	@media screen and (max-width: 1160px)
+		display none
+
+.header-line--wrapper
+	width 100%
+	z-index 1000
+	@media screen and (max-width: 1160px)
+		display none
+	// &.sticky-logo1
+	// 	position fixed
+	// 	top -120px
+	// &.sticky-logo2
+	// 	position fixed
+	// 	top 65px
+	// 	background: #fff
+	// 	transition: all .3s cubic-bezier(.645,.045,.355,1)
+	// 	.header-line
+	// 		.logo-block
+	// 			padding-top 0
+	// 			&:before
+	// 				display none
+	// 			img
+	// 				width 133px
+
+.header-mobile
+	position absolute
+	top 0
+	left 0
+	width 100%
+	display none
+	@media screen and (max-width: 1160px)
+		display block
+
+.header-small--flex
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	min-height 65px
+
+.wrapper-header--flex
+	display flex
+	flex-direction row
+	justify-content space-between
+	min-height 65px
+	padding-top 20px
+
+.right-block--header
+	display flex
+	flex-direction row
+
+.location
+	min-width 185px
+	display inline-block
+	@media screen and (max-width: 1200px)
+		min-width 140px
+	.icon-location
+		fill cdblue
+	p
+		ffB(16px)
+		c cfblack
+	.icon-sprite
+		position relative
+		top 2px
+		display inline-block
+		margin-right 4px
+
+.main-menu
+	display inline-block
+	ul.menu-top
+		&>li
+			display inline-block
+			padding-bottom 27px
+			&:not(:last-child)
+				margin-right 23px
+			&.sub-list
+				&>a
+					position relative
+					padding-right 20px
+					&:before
+						position absolute
+						right 4px
+						bottom 2px
+						display block
+						content ""
+						height 14px
+						width 8px
+						background-image: url(../img/icon-svg/arrov.svg)
+						background-repeat no-repeat
+						transform rotate(90deg)
+						trn(.15s)
+			&>a
+				ffB(16px)
+				c cfblack
+				text-decoration none
+
+
+.sticky-one
+	.main-menu
+		ul.menu-top
+			&>li
+				padding-bottom 20px
+
+// Sub menu
+
+.sub-list
+	&:hover
+		a:before
+			transform rotate(-90deg) !important
+			
+		.sub-menu
+			top 65px
+			opacity 1
+			visibility visible
+
+.sub-menu
+	position absolute
+	left 0
+	top 90px
+	padding-top 40px
+	min-height 440px
+	background: #f0f4fa
+	width 100%
+	overflow hidden
+	opacity 0
+	visibility hidden
+	z-index 100
+	trn(.2s)
+	.sub-menu--container
+		position relative
+		display flex
+		flex-direction row
+		justify-content space-between
+		max-width 876px
+		margin 0 auto
+		&:before
+			bff()
+			top -40px
+			left 240px
+			width 100%
+			max-width 920px
+			height 335px
+			background: url(../img/bg-menu.svg)
+			background-repeat no-repeat
+		.sub-menu--items
+			width 275px
+			&:last-child
+				margin-left 60px
+			h6
+				color cfblack
+				letter-spacing: 0.1px
+				margin-bottom 24px
+			a
+				color cfblack
+				letter-spacing: 0.1px
+				margin-bottom 24px
+				text-decoration none
+				trn(.15s)
+				&:hover
+					color: #54bbbf
+
+.menu-view
+	ffSB(14px)
+	c cdblue
+	line-height: 24px
+	text-decoration none
+	display inline-block
+	margin-top 8px
+
+.sub-menu--items
+	position relative
+	.sub-menu--contain
+		&:not(:last-child)
+			margin-bottom 32px
+		
+	ul
+		li
+			display block
+			&:not(:last-child)
+				margin-bottom 19px
+		a
+			ffR(16px)
+			color cfblack
+			letter-spacing: 0.1px
+			text-decoration none
+
+.post-small
+	max-width: 275px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+	min-height 376px
+	.post-small--img
+		position relative
+		height 142px
+		overflow hidden
+		border-radius 5px
+		a
+			display inline-block
+			width 100%
+			height 100%
+		img
+			position absolute
+			top 50%
+			left 50%
+			width 102%
+			height auto
+			tt(-50%, -50%)
+	.post-small--text
+		padding 20px 23px 20px 27px
+		h4
+			font-size 20px
+			line-height: 23px
+			margin-bottom 16px
+			a
+				text-decoration none
+				c #4a4a4a
+		p
+			ffR(14px)
+			letter-spacing: 0.3px
+			line-height: 18px
+			color cfblue
+			margin-bottom 16px
+
+.more-link
+	display flex
+	flex-direction row
+	align-items center
+	ffSB(14px)
+	color: cdblue
+	text-decoration none
+	trn(.2s)
+	&:hover
+		svg
+			fill #b2d33d
+	svg
+		margin-left 9px
+		fill #54bbbf
+		trn(.2s)
+
+
+// CallBack
+
+.callback
+	display flex
+	flex-direction row
+	a
+		text-decoration none
+	&--request
+		padding-top 4px
+		ffSB(14px)
+		c cfblack
+		letter-spacing: 0.09px
+	&--phone
+		ffSB(20px)
+		c cfblack
+		letter-spacing: 0.1px
+		margin-left 12px
+
+.login
+	margin-left 25px
+	padding-top 2px
+	display block
+	a
+		display inline-block
+		ffSB(14px)
+		c cfblack
+		letter-spacing: 0.09px
+		text-decoration none
+
+
+// Header Content
+
+.header-content
+	background: #fff
+	min-height 540px
+	padding-bottom 35px
+	@media screen and (max-width: 1160px)
+		overflow hidden
+	@media screen and (max-width: 720px)
+		min-height auto
+	@media screen and (max-width: 480px)
+		min-height 380px
+	
+
+.header-line
+	position relative
+	min-height 120px
+	display flex
+	flex-direction row
+	justify-content space-between
+	z-index 50
+	
+	.logo-block
+		position relative
+		min-width 385px
+		padding-top 20px
+		a
+			display inline-block
+		img
+			position relative
+			z-index 10
+		&:before
+			position absolute
+			top 0
+			right 0
+			width 800px
+			height 120px
+			content ""
+			display block
+			background: url(../img/bg-logo.svg)
+			background-repeat no-repeat
+			background-position: right -8px
+	
+	.header-line--button
+		display flex
+		align-items center
+		padding-bottom 16px
+		.btn:not(:last-child)
+			margin-right 10px
+		.mobile-show
+			display none
+		.mobile-hide
+			display block
+
+.content-head
+	position relative 
+	height 745px
+	@media screen and (max-width: 1160px)
+		height: auto
+		min-height 580px
+	@media screen and (max-width: 720px)
+		min-height 460px
+	@media screen and (max-width: 640px)
+		min-height 500px
+.content-one-bg
+	position absolute
+	right 130px
+	top 0
+	height 100%
+	width 2410px
+	@media screen and (max-width: 1160px)
+		right -90px
+		top -245px
+		height 750px
+	@media screen and (max-width: 854px)
+		right -220px
+	@media screen and (max-width: 720px)
+		right -270px
+	@media screen and (max-width: 600px)
+		right -385px
+	@media screen and (max-width: 480px)
+		right: -475px
+		top: -200px
+	
+	.mask-one
+		@media screen and (max-width: 720px)
+			mask-size: 1960px
+			webkit-mask-size: 1960px
+		@media screen and (max-width: 480px)
+			mask-size: 2060px
+			webkit-mask-size: 2060px
+
+// Mask
+
+.mask-go
+	display: block
+	max-width: 100%
+	height: 100%
+
+.mask-one
+	mask-image: url(../img/head-svg--v1.svg)
+	mask-mode: alpha
+	webkit-mask-mode: alpha
+	mask-repeat: no-repeat
+	webkit-mask-repeat: no-repeat
+	mask-size: 2410px
+	webkit-mask-size: 2410px
+	mask-position: right top
+	webkit-mask-position: right top
+
+.img-mask
+	img
+		position absolute
+		top 50%
+		right 0
+		tt(0, -50%)
+		@media screen and (max-width: 992px)
+			max-height 540px
+			width auto
+		@media screen and (max-width: 720px)
+			// tt(-50%, -50%)
+	&:before
+		position absolute
+		top 0
+		left 0
+		content ""
+		width 100%
+		height 100%
+		background: rgba(84,187,191,.84)
+		z-index 10
+
+// Content Header
+
+.content-head--unflex
+	position relative
+	padding-top 120px
+	z-index 20
+	@media screen and (max-width: 1160px)
+		padding-top 28px
+
+.content-head--wrapper
+	position relative
+	display flex
+	flex-direction row
+	justify-content space-between
+	padding-top 120px
+	z-index 20
+	@media screen and (max-width: 1160px)
+		padding-top 28px
+	@media screen and (max-width: 720px)
+		display flex
+		flex-direction column
+	@media screen and (max-width: 480px)
+		padding-top 0
+
+.content-head--small
+	padding-top 50px
+	padding-bottom 44px
+	c #fff
+	&>h1
+		c #fff
+		margin-bottom 21px
+		@media screen and (max-width: 854px)
+			font-size: 30px
+			line-height: 33px
+	&>p
+		ffR(21px)
+		c #fff
+		line-height: 35px
+		margin-bottom 18px
+		max-width 750px
+		@media screen and (max-width: 854px)
+			font-size: 16px
+			line-height: 21px
+
+.content-head--three .content-head--right
+	@media screen and (max-width: 1160px)
+		padding-right 0
+	@media screen and (max-width: 950px)
+		display none
+
+.content-head--threedesc
+	padding-top 50px
+	color #fff
+	@media screen and (max-width: 480px)
+		padding-top 30px
+	h1
+		ffSB(48px)
+		color #fff
+		line-height: 49px
+		margin-bottom 13px
+		@media screen and (max-width: 1160px)
+			font-size 46px
+			line-height 44px
+			margin-bottom 20px
+		@media screen and (max-width: 854px)
+			font-size 30px
+			line-height: 33px
+		@media screen and (max-width: 540px)
+			br
+				display none
+		@media screen and (max-width: 480px)
+			margin-bottom 16px
+	p
+		font-size 21px
+		font-family: fR
+		color #fff
+		line-height: 35px
+		margin-bottom 24px
+		@media screen and (max-width: 1160px)
+			font-size 20px
+			letter-spacing: 0.13px
+			line-height: 26px
+		@media screen and (max-width: 854px)
+			max-width 360px
+			font-size 16px
+			letter-spacing: 0.1px
+			line-height: 21px
+		@media screen and (max-width: 480px)
+			margin-bottom 16px
+		br
+			@media screen and (max-width: 854px)
+				display none
+	.satisfaction-rating .satisfaction-rating--content
+		h4,
+		p
+			color #fff
+
+.content-head--desc
+	padding-top 95px
+	max-width 768px
+	@media screen and (max-width: 1160px)
+		padding-top 48px
+	@media screen and (max-width: 720px)
+		padding-top 20px
+	@media screen and (max-width: 414px)
+		padding-top 10px
+	h1
+		ffSB(51px)
+		color #fff
+		line-height: 49px
+		margin-bottom 34px
+		@media screen and (max-width: 1160px)
+			font-size 46px
+			line-height 44px
+			margin-bottom 20px
+		@media screen and (max-width: 854px)
+			font-size 30px
+			line-height: 33px
+	p
+		font-size 23px
+		font-family: fR
+		color #fff
+		letter-spacing: 0.14px
+		line-height: 35px
+		margin-bottom 52px
+		@media screen and (max-width: 1160px)
+			font-size 20px
+			letter-spacing: 0.13px
+			line-height: 26px
+		@media screen and (max-width: 854px)
+			max-width 360px
+			font-size 16px
+			letter-spacing: 0.1px
+			line-height: 21px
+		@media screen and (max-width: 720px)
+			margin-bottom 24px
+		@media screen and (max-width: 480px)
+			line-height: 1.5125rem
+		br
+			@media screen and (max-width: 854px)
+				display none
+	.content-head--button
+		@media screen and (max-width: 414px)
+			display flex
+			flex-direction column
+			
+		.btn
+			min-width 155px
+			height 50px
+			line-height 48px
+			@media screen and (max-width: 414px)
+				align-self flex-start
+			span
+				ffSB(18px)
+				letter-spacing: 0.11px
+			&:not(:last-child)
+				margin-right 34px
+				@media screen and (max-width: 414px)
+					margin-right 0
+					margin-bottom 13px
+
+.content-head--right
+	padding-top 8px
+	padding-right 60px
+	@media screen and (max-width: 854px)
+		padding-right 0
+	@media screen and (max-width: 720px)
+		margin-top 40px
+	.circle-photo
+		margin-bottom 28px
+		@media screen and (max-width: 720px)
+			display none
+
+.circle-photo
+	position relative
+	width: 440px
+	height: 440px
+	brr(50%) 
+	background: #b2d33d
+	border 15px solid #b2d33d
+	overflow hidden
+	@media screen and (max-width: 1160px)
+		width 338px
+		height 338px
+	img
+		position absolute
+		top 50%
+		left 50%
+		width 100%
+		tt(-50%, -50%)
+
+.star-wrapper
+	display flex
+	flex-direction row-reverse
+	.star-article
+		width: 38px
+		height: 32px
+		position: relative
+		cursor pointer
+		&:not(:first-child)
+			padding-right 4px
+		svg
+			fill #54bbbf
+			trn(.2s)
+
+	& > span:hover svg,
+	& > span:hover ~ span svg,
+	& > span.is-active svg,
+	& > span.is-active ~ span svg
+		fill cdgreen
+
+
+.satisfaction-rating
+	padding-left 7px
+	.satisfaction-rating--star
+		display flex
+		flex-direction row
+		align-items center
+		margin-bottom 10px
+		.star-wrapper
+			width 186px
+			margin-right 6px
+		&>span
+			font-size 18px
+	.satisfaction-rating--content
+		h4
+			font-family: fSB
+			font-size 21px
+			color cfblack
+			line-height: 35px
+			@media screen and (max-width: 854px)
+				font-size 16px
+		p
+			ffR(18px)
+			color cfblack
+			line-height: 22px
+			@media screen and (max-width: 854px)
+				font-size 14px
+
+[class*="content-head--"]
+	position relative
+
+// Header Two a
+
+.content-head--two-a
+	position relative
+	.content-head--desc
+		padding-top 55px
+		padding-bottom 55px
+		@media screen and (max-width: 480px)
+			padding-top 20px
+		p
+			margin-bottom 40px
+
+.content-two-c-bg
+	position absolute
+	right 105px
+	top 0
+	height 480px
+	width 2500px
+	@media screen and (max-width: 960px)
+		right -130px
+	@media screen and (max-width: 600px)
+		right -230px
+	@media screen and (max-width: 480px)
+		right -220px
+		min-height 360px
+	.mask-two
+		mask-size: 2220px
+		webkit-mask-size: 2220px
+		@media screen and (max-width: 480px)
+			mask-size: 1680px
+			webkit-mask-size: 1680px
+			
+
+.content-three-bg
+	position absolute
+	right 130px
+	top 0
+	height 560px
+	width 2500px
+	@media screen and (max-width: 950px)
+		right -130px
+	@media screen and (max-width: 600px)
+		right -230px
+	@media screen and (max-width: 480px)
+		min-height 370px
+.mask-three
+	mask-image: url(../img/head-svg--v2.svg)
+	mask-mode: alpha
+	webkit-mask-mode: alpha
+	mask-repeat: no-repeat
+	webkit-mask-repeat: no-repeat
+	mask-size: 2590px
+	webkit-mask-size: 2590px
+	mask-position: right top
+	webkit-mask-position: right top
+	@media screen and (max-width: 1160px)
+		mask-size: 2500px
+		webkit-mask-size: 2500px
+	@media screen and (max-width: 480px)
+		mask-size: 1680px
+		webkit-mask-size: 1680px
+
+.content-two-a-bg
+	position absolute
+	right 62px
+	top 0
+	height 538px
+	width 2410px
+	@media screen and (max-width: 960px)
+		right -130px
+	@media screen and (max-width: 854px)
+		right -150px
+	@media screen and (max-width: 600px)
+		right -230px
+	@media screen and (max-width: 480px)
+		right -240px
+		height 360px
+	h1
+		font-size 48px
+		margin-bottom 23px
+	p
+		font-size 21px
+		line-height 35px
+
+.mask-two
+	mask-image: url(../img/head-svg--v2.svg)
+	mask-mode: alpha
+	webkit-mask-mode: alpha
+	mask-repeat: no-repeat
+	webkit-mask-repeat: no-repeat
+	mask-size: 2485px
+	webkit-mask-size: 2485px
+	mask-position: right top
+	webkit-mask-position: right top
+	@media screen and (max-width: 480px)
+		mask-size: 1680px
+		webkit-mask-size: 1680px
+
+// Header Two d
+
+.content-head--two-d
+	position relative
+	.content-two-a-bg
+		right 110px
+		@media screen and (max-width: 960px)
+			right -130px
+		@media screen and (max-width: 480px)
+			right: -220px
+			height 360px
+	
+	.mask-two
+		mask-size: 2280px
+		webkit-mask-size: 2280px
+
+.content-head--author
+	.mask-two
+		mask-size: 2480px
+		webkit-mask-size: 2480px
+		@media screen and (max-width: 480px)
+			mask-size: 2480px
+			webkit-mask-size: 2480px
+	.content-two-c-bg
+		position absolute
+		top auto
+		bottom -90px
+		height 540px
+		@media screen and (max-width: 1023px)
+			right 0
+		@media screen and (max-width: 960px)
+			right -130px
+		@media screen and (max-width: 720px)
+			bottom 0
+		@media screen and (max-width: 640px)
+			right -300px
+		@media screen and (max-width: 480px)
+			right -380px
+
+.phone-head
+	color: #ffffff
+	font-family: fSB
+	font-size: 20px
+	letter-spacing: 0.1px
+	text-decoration none
+	margin-right 20px
+
+.head-post--page
+	position relative
+	padding-top 150px
+	padding-bottom 30px
+	color #fff
+	z-index 10
+	max-width 700px
+	@media screen and (max-width: 1080px)
+		max-width 600px
+	@media screen and (max-width: 720px)
+		padding-top 50px
+		padding-bottom 50px
+		max-width 450px
+	.date
+		display block
+		font-family: fR
+		font-size: 16px
+		letter-spacing: 0.34px
+		line-height: 24px
+		color #fff
+		margin-bottom 12px
+	h1
+		letter-spacing: 0.5px
+		line-height: 49px
+		color #fff
+		@media screen and (max-width: 854px)
+			font-size: 1.875rem
+			line-height: 2.0625rem
+	&>p
+		font-family fR
+		font-size: 21px
+		line-height: 35px
+		color #fff
+		margin-top 20px
+		@media screen and (max-width: 854px)
+			font-size: 1rem
+			line-height: 1.3125rem
+
+.author-post
+	display flex
+	flex-direction row
+	align-items center
+	margin-top 18px
+	&--img
+		position relative
+		width 75px
+		height 75px
+		brr(50%)
+		overflow hidden
+		margin-right 32px
+		@media screen and (max-width: 480px)
+			margin-right 11px
+		img
+			position absolute
+			width 100%
+			height auto
+			imgC()
+	&--content
+		p
+			color: #ffffff
+			font-family: fSB
+			font-size: 23px
+			line-height: 35px
+			@media screen and (max-width: 480px)
+				font-size 16px
+		span
+			color: #ffffff
+			font-family: fR
+			font-size: 18px
+			@media screen and (max-width: 480px)
+				font-size 14px

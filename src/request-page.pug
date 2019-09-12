@@ -1,0 +1,67 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Find Carer'
+
+block header
+	include include/header-line
+
+block main
+	main.section_main
+		
+		section.find-carer--wrapper
+			.container
+				.popup-step.zoom-anim-dialog#step-form
+					a(href="index.html").custom-close--link
+						| Close
+						svg(width="35" height="35" viewBox="0 0 35 35").icon-close
+							use(xlink:href="img/icon-svg/sprite-icon.svg#close")
+					.container-popup.request-form
+						+headingSmall("SPEAK TO US", "Request a callback", "Simply let us know the best contact details to reach you on and one of our friendly team will give you a call back.")
+
+						.request-form--wrapper
+							form
+								.customs-input
+									input(placeholder="Your name")
+
+								.customs-input
+									input(placeholder="Your phone number")
+
+								.radio--wrapper
+									.radio-items.col-6
+										label.radio
+											input(type="radio" name="radio" checked required="")
+											p.radio__text I’m looking for a care
+									.radio-items.col-6
+										label.radio
+											input(type="radio" name="radio" required="")
+											p.radio__text I’m looking for a care job
+
+								.when-to-call
+									h4.text-center When would you like us to call?
+
+									.radio--wrapper
+										.radio-items.col-6
+											label.radio
+												input(type="radio" name="to-call" checked required="")
+												p.radio__text Straight away
+										.radio-items.col-6
+											label.radio
+												input(type="radio" name="to-call" required="")
+												p.radio__text Morning
+										.radio-items.col-6
+											label.radio
+												input(type="radio" name="to-call" required="")
+												p.radio__text Afternoon
+										.radio-items.col-6
+											label.radio
+												input(type="radio" name="to-call" required="")
+												p.radio__text Evening
+
+									.botton-request.text-center
+										a(href="#").btn.btn-darkGreen.size-btn
+											span Call me back
+
+						
+
+		include include/block/speak-to-us.pug

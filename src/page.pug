@@ -1,0 +1,59 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Page'
+
+block header
+	include include/header
+
+	.header-content
+		.container
+			include include/header/content--head-post
+
+	br
+	br
+
+	.header-content
+		.container
+			include include/header/content-two-c
+
+	br
+	br
+
+	.header-content
+		.container
+			include include/header/content-two
+
+	br
+	br
+
+	.header-content
+		.container
+			include include/header/content-two-b
+
+	br
+	br
+
+	.header-content
+		.container
+			include include/header/content-two-d
+
+	br
+	br
+
+	.header-content
+		.container
+			include include/header/content-three
+
+block prepend main
+
+	main.section_main
+		//- include include/footer
+		//- +b.SECTION.new-section
+		//- 	| Main
+		//- a.button--call#create-cup-open
+		//- 	| Button
+		//- +e.SVG._icon.icon--svg.circle-svg
+		//- 	USE(xlink:href="/img/sprite.svg#icon-circle")
+		//- +e.SVG._icon.icon--svg.circle-svg
+		//- 	USE(xlink:href="/img/sprite.svg#icon-people1")

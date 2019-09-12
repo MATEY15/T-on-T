@@ -1,0 +1,60 @@
+.section-links
+	padding 25px 0 20px
+
+.links-big--wrapper
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -35px
+	@media screen and (max-width: 1160px)
+		margin 0 -15px
+	
+	.links-big--items
+		width 33.3%
+		padding 15px 35px
+		@media screen and (max-width: 1160px)
+			padding 15px
+		@media screen and (max-width: 854px)
+			width 50%
+		@media screen and (max-width: 540px)
+			width 100%
+			padding 10px 15px
+
+.links-big
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	width 100%
+	max-width 370px
+	min-height 165px
+	text-decoration none
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #54bbbf
+	padding 20px 52px
+	color #fff
+	ffSB(23px)
+	letter-spacing: -0.1px
+	line-height: 23px
+	trn(.2s)
+	@media screen and (max-width: 720px)
+		padding: 20px 45px 20px 40px
+	@media screen and (max-width: 540px)
+		margin: auto
+		min-height 120px
+		font-size: 1.2rem
+	&:hover
+		background: #b2d33d
+		svg
+			// fill #b2d33d
+	svg
+		width 50px
+		min-width 50px
+		height 50px
+		fill #fff
+		margin-left 20px
+		trn(.2s)
+		@media screen and (max-width: 540px)
+			width 30px
+			height 30px

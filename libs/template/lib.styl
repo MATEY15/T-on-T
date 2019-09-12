@@ -1,0 +1,123 @@
+notT()
+	&:not(:last-child)
+		margin-top: arguments
+notB()
+	&:not(:last-child)
+		margin-bottom: arguments
+notR()
+	&:not(:last-child)
+		margin-right: arguments
+notL()
+	&:not(:last-child)
+		margin-left: arguments
+
+imgC()
+	top 50%
+	left 50%
+	tt(-50%, -50%)	
+
+mt()
+	margin-top: arguments
+mb()
+	margin-bottom: arguments
+mr()
+	margin-right: arguments
+ml()
+	margin-left: arguments
+
+tt($Xposition, $Yposition)
+	transform translate($Xposition, $Yposition)
+
+fff($fz, $ff, $ls)
+	font-size $fz
+	font-family $ff
+	letter-spacing  $ls
+	font-weight normal
+
+ffR($size-font)
+	font-size $size-font
+	ffa(fR)
+
+ffSB($size-font)
+	font-size $size-font
+	ffa(fSB)
+
+ffB($size-font)
+	font-size $size-font
+	ffa(fB)
+	ls(0.1px)
+
+bff()
+	position absolute
+	display block
+	content ""
+	
+
+trn($time)
+	transition all $time ease-out
+
+br(arguments)
+	border 1px solid arguments
+
+pt()
+	padding-top: arguments
+pb()
+	padding-bottom: arguments
+pr()
+	padding-right: arguments
+pl()
+	padding-left: arguments
+
+ls()
+	letter-spacing: arguments
+
+icon($name)
+	background-image: url("../icons/"$name)
+	size: width($name) height($name)
+iconB($name)
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		icon($name)
+iconA($name)
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		icon($name)
+
+brr($rad)
+	border-radius: $rad
+
+baa()
+	position: relative
+	&:before
+	&:after
+		content: ''
+		position: absolute
+
+
+lh()
+	line-height: arguments
+
+fz()
+	font-size: arguments
+
+ffa()
+	font-family: arguments
+
+fw()
+	font-weight: arguments
+
+txtd()
+	text-decoration: arguments
+
+txta()
+	text-align: arguments
+
+txtt()
+	text-transform: arguments
+
+c()
+	color: arguments

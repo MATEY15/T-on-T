@@ -1,0 +1,111 @@
+include ../libs/bemto/bemto.pug
+
+block variab
+
+include include/mixin-main
+
+doctype html
+html(lang="en")
+	block head
+		head
+			title= titlePage
+
+			meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+			meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+			meta(name='format-detection', content='telephone=no')
+			link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+			link(rel="shortcut icon" href="img/favicon/apple-touch-icon.png" type="image/x-icon")
+			link(rel="shortcut icon" href="img/favicon/apple-touch-icon-72x72.png" type="image/x-icon")
+			link(rel="shortcut icon" href="img/favicon/apple-touch-icon-144x144.png" type="image/x-icon")
+
+			link(rel="stylesheet", href="css/index.css")
+
+			meta(name="theme-color", content="#3158d3")
+			meta(name="msapplication-navbutton-color", content="#3158d3")
+			meta(name="apple-mobile-web-app-status-bar-style", content="#3158d3")
+
+	body
+		//- svg.shape-overlays(viewbox='0 0 100 100', preserveaspectratio='none')
+			path.shape-overlays__path
+			path.shape-overlays__path
+			path.shape-overlays__path
+		//- div#overlayer
+		//- .color-blocks
+			p
+				| cfblue === #7f8b9c
+				br
+				| cfblack === #4a4a4a
+				br
+				br
+				| cdblue === #54bbbf
+				br
+				| cdgreen === #b2d33d
+				br
+				| cdorang === #f68b1f
+				br
+				| cdpink === #f063a0
+				br
+				br
+				| bglwhite === #f0f4fa
+				br
+				| bglpink === #f9f7fd
+				br
+				| bglgreen === #e6f7f7
+				br
+				| bglblue === #76c9cc
+
+		block header
+
+		block main
+		
+		block footer
+			include include/footer
+
+		.hidden
+			include include/popup-step
+
+			.location-popup.zoom-anim-dialog#location-popup
+				.wrapper--location-popup
+					.custom-close
+						| Close
+						svg(width="35" height="35" viewBox="0 0 35 35").icon-close
+							use(xlink:href="img/icon-svg/sprite-icon.svg#close")
+
+					h4 Are you looking for care in or around
+					p.city-location
+						svg(width="9" height="13" viewBox="0 0 9 13").icon-location
+							use(xlink:href="img/icon-svg/sprite-icon.svg#icon-location")
+						| Banbury?
+					.button--city-location.text-center
+						a(href="#").btn.btn-darkGreen.size-btn
+							span Correct
+						a(href="#").btn.btn-white.size-btn
+							span Change
+
+
+		//- .hidden
+			+b.main-form.zoom-anim-dialog#popup-send
+				+e.FORM.__submit.formValidate
+					H2.heading-h2
+						| Request Quote
+					+e.items-input
+						+e.LABEL().label Name
+						+e.INPUT(name="text", placeholder="First and Last Name").input
+					+e.items-input
+						+e.LABEL().label E-Mail*
+						+e.INPUT(name="text", placeholder="E-mail").input
+					+e.items-input
+						+e.LABEL().label Company name*
+						+e.INPUT(name="text", placeholder="Company name").input
+					+e.items-input
+						+e.LABEL().label message
+						+e.TEXTAREA(name="text", placeholder="How SwiftMotion can help you?").input
+					+e.items-button
+						button.button(type="submit") Request Quote
+
+		block scripts
+			//- script(src='https://unpkg.com/flipping@latest/dist/flipping.web.js')
+			//- script(src='/js/shape-overlays.js')
+			script(src='js/jquery.min.js')
+			script(src='js/scripts.js')
+			script(src='js/step-form.js')

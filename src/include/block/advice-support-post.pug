@@ -1,0 +1,17 @@
+block variables
+	-var adviceSupport = ["Whatever your situation, you’re not alone. Explore our advice and support archive for helpful insights and guidance."]
+	-var support1 = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit magna, maximus eu luctus dapibus, vestibulum in."]
+
+section.advice-support--repeat
+	.container
+		+heading("INFORMATION", "Advice & support", adviceSupport)
+		.advice-support--main
+			.advice-support--items
+				+post2("#", "img/support1.jpg", "ABOUT US", "Getting started", support1)
+			.advice-support--items
+				+post("#", "img/support2.jpg", "HOW IT WORKS", "Understanding home care", support1, "Jul 8, 2019")
+			.advice-support--items
+				+post("#", "img/support1.jpg", "SPECIALIST CARE", "Choosing the right care for your loved ones", support1, "Jul 8, 2019")
+		.button-wrapper.text-center
+			a(href="#").btn.btn-white.size-btn
+				span view more

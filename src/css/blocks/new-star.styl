@@ -1,0 +1,40 @@
+.new-rating
+	display inline-block
+	position relative
+
+.star-item
+	position relative
+
+.star-hover
+	position absolute
+	display flex
+	flex-direction row-reverse
+	top 0
+	left 0
+	height 24px
+	
+	.star-hover--right
+		padding-right 4px
+		svg
+			position absolute
+			right 4px
+	&>div:hover,
+	&>div:hover,
+	&>div.is-active,
+	&>div.is-active ~ div,
+	&>div:hover ~ div,
+	&>div:hover ~ div
+		opacity 1
+	
+	.star-hover--left,
+	.star-hover--right
+		position relative
+		width 13px
+		height 24px
+		width 50%
+		
+		overflow hidden
+		opacity 0
+		trn(.2s)
+		
+	

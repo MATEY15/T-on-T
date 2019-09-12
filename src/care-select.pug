@@ -1,0 +1,137 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Find Carer'
+
+block header
+	include include/header-line
+
+block main
+	main.section_main
+
+		.section--light-blue.wrapper--care-select
+			.container
+				.care-select
+					a(href="index.html").custom-close--link
+						| Close
+						svg(width="35" height="35" viewBox="0 0 35 35").icon-close
+							use(xlink:href="img/icon-svg/sprite-icon.svg#close")
+					+headingSmall("OUR LOCATIONS", "I’m looking for care in or around…")
+
+					.search-care
+						form
+							.customs-input.add-right--icon
+								input(placeholder="start typing your location")
+								button.icon-figure.search-button--more
+									svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+										use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")
+
+					.search-list
+						.search-list--item
+							h6 Oxfordshire
+							ul
+								li
+									a(href="#") Oxford
+								li
+									a(href="#") Banbury
+								li
+									a(href="#") Bicester
+								li
+									a(href="#") Kidlington
+								li
+									a(href="#") Woodstock
+								li
+									a(href="#") Chipping Norton
+								li
+									a(href="#") Carterton
+								li
+									a(href="#") Witney
+								li
+									a(href="#") Faringdon
+								li
+									a(href="#") Thame
+								li
+									a(href="#") Chinnor
+								li
+									a(href="#") Watlington
+								li
+									a(href="#") Abingdon
+								li
+									a(href="#") Wantage
+								li
+									a(href="#") Didcot
+								li
+									a(href="#") Wallingford
+								li
+									a(href="#") Henley-on-Thames
+
+						.search-list--item
+							h6 Buckinghamshire
+							ul
+								li
+									a(href="#") High Wycombe
+								li
+									a(href="#") Gerrards Cross
+								li
+									a(href="#") Beaconsfield
+								li
+									a(href="#") Buckingham
+								li
+									a(href="#") Great Missenden
+								li
+									a(href="#") Chesham
+								li
+									a(href="#") The Chalfonts
+								li
+									a(href="#") Aylesbury
+								li
+									a(href="#") Marlow
+								li
+									a(href="#") Bourne End
+								li
+									a(href="#") Princes Risborough
+								li
+									a(href="#") Buckingham
+								li
+									a(href="#") Olney
+								li
+									a(href="#") Milton Keynes
+								li
+									a(href="#") Newport Pagnell
+
+						.search-list--item
+							h6 Berkshire
+							ul
+								li
+									a(href="#") Reading
+								li
+									a(href="#") Bracknell
+								li
+									a(href="#") Newbury
+								li
+									a(href="#") Hungerford
+								li
+									a(href="#") Thatcham
+								li
+									a(href="#") Wokingham
+								li
+									a(href="#") Crowthorne
+								li
+									a(href="#") Slough
+								li
+									a(href="#") Windsor
+								li
+									a(href="#") Ascot
+								li
+									a(href="#") Maidenhead
+
+					.button--care-select.text-center
+						a(href="#").btn.btn-darkGreen.size-btn
+							span My location isn’t listed
+						a(href="#").btn.btn-white.size-btn
+							span I’m looking for a care job
+
+		
+						
+
+		include include/block/speak-to-us.pug

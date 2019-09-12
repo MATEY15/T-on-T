@@ -1,0 +1,177 @@
+.header-mobile
+	position relative
+
+.mobile-menu--container
+	display flex
+	flex-direction row
+	align-items center
+	justify-content space-between
+	min-height 72px
+	background: #fff
+
+.right--mobile-head
+	display flex
+	flex-direction row
+	align-items center
+	.callback.callback-mobile
+		align-items flex-start
+		@media screen and (max-width: 600px)
+			display none
+		.callback--request
+			padding-top 1px
+
+.menu-open
+	display flex
+	flex-direction row
+	align-items center
+	margin-left 30px
+	cursor pointer
+	height 32px
+	ffSB(12px)
+	c #4a4a4a
+	letter-spacing: 0.08px
+	@media screen and (max-width: 360px)
+		margin-left 0
+	&.is-active
+		.drop-menu
+			.drop-line--small
+				position relative
+				margin-top 0
+				width 42px
+				transform rotateZ(-45deg)
+			.drop-line--big
+				position relative
+				top 5px
+				width 42px
+				transform rotateZ(45deg)
+
+.drop-menu
+	display flex
+	flex-direction column
+	align-items flex-end
+	margin-left 12px
+	min-width 53px
+	.drop-line--small,
+	.drop-line--big
+		position relative
+		display block
+		width: 53px
+		height: 5px
+		border-radius: 3px
+		background-color: #54bbbf
+		trn(.25s)
+	.drop-line--small
+		width 38px
+		margin-top 11px
+
+.menu-mobile--hide
+	position absolute
+	top calc(100% + 30px)
+	left 0
+	width 100%
+	height calc(100vh - 72px)
+	background: cdblue
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	opacity 0
+	visibility hidden
+	z-index 1000
+	padding-top 38px
+	padding-bottom 85px
+	overflow-y scroll
+	trn(.2s)
+	&.is-active
+		top 100%
+		opacity 1
+		visibility visible
+
+.menu-mobile--list
+	li
+		ffB(22px)
+		c #fff
+		letter-spacing: 0.14px
+		margin-bottom 25px
+		span
+			display block
+			position relative
+			&.is-active
+				&:before
+					transform rotateX(-180deg)
+			&:before
+				bff()
+				width 26px
+				height 15px
+				top 5px
+				right 0
+				background-image: url(../img/arrow-white.svg)
+				trn(.25s)
+
+.sub-menu-mobile
+	margin-top 14px
+	display none
+	h6
+		ffB(18px)
+		c #fff
+		letter-spacing: 0.14px
+		margin-bottom 20px
+	ul
+		li
+			margin-bottom 12px
+		a
+			ffR(18px)
+			c #fff
+			letter-spacing: 0.14px
+			text-decoration none
+
+.button--mobile-hide
+	.btn
+		line-height 48px
+		min-width 160px
+		&.btn-whitebr
+			border: 3px solid #fff
+			line-height 46px
+		&:first-child
+			margin-bottom 10px
+
+.callback-hide
+	margin-top 29px
+	a
+		color #fff
+
+.ligin-mobile
+	margin-top 27px
+	a
+		display flex
+		flex-direction row
+		align-items center
+		ffSB(14px)
+		color #fff
+		text-decoration none
+		letter-spacing: 0.09px
+		.icon-more
+			width 14px
+			height 14px
+			margin-left 8px
+			fill #fff
+
+.location-mobile--wrapper
+	margin-top 75px
+.location-mobile
+	max-width 270px
+	display flex
+	flex-direction row
+	align-items center
+	text-align center
+	justify-content center
+	height: 48px
+	ffB(19px)
+	color cdblue
+	letter-spacing: 0.12px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+	text-decoration none
+	svg
+		width 15px
+		height 27px
+		margin-right 18px
+		fill cdblue

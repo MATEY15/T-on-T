@@ -1,0 +1,1242 @@
+.text-center
+	text-align center
+.text-left
+	text-align left
+.text-right
+	text-align right
+.justive-center
+	justify-content center
+
+.all-categories
+	display flex
+	flex-direction row
+	align-items center
+	ffSB(18px)
+	color: #fff
+	text-decoration none
+	letter-spacing: 0.11px
+	.icon-more
+		width 35px
+		height 35px
+		fill #fff
+		margin-right 12px
+		transform rotateY(180deg)
+
+span.date-default
+	ffR(12px)
+	c cfblue
+	letter-spacing: 0.26px
+	line-height: 24px
+
+.background-swirl
+	position relative
+	min-height 550px
+	&:before
+		position: absolute
+		display: block
+		content: ""
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 750px
+		height: 550px
+		background-image: url(../img/background_bubble.svg)
+		background-repeat: no-repeat
+		background-position: center
+
+.section--light-blue
+	background: rgba(244,241,251,.56)
+	padding: 50px 0 58px
+
+.main-rating--star
+	display: flex
+	align-items: center
+	.star-wrapper
+		margin-right 6px
+	span
+		ffR(16px)
+		letter-spacing: 0.34px
+		line-height: 24px
+		c cfblue
+
+.heading-main
+	text-align center
+	&.heading-main--left
+		text-align: left
+		margin-bottom 54px !important
+		p
+			max-width 100%
+			text-align: left
+		h2
+			margin-bottom 18px
+
+	&.heading-offset
+		margin 40px 0
+	
+	&.heading-small
+		.head-line--desc
+			margin-bottom 16px
+		h2
+			margin-bottom 19px
+	
+	h2
+		letter-spacing: -0.2px
+		margin-bottom 33px
+		span.dotted-green
+			c cdblue
+		@media screen and (max-width: 1160px)
+			font-size 38px
+			letter-spacing: -0.17px
+			line-height: 49px
+		@media screen and (max-width: 540px)
+			font-size 26px
+			letter-spacing: -0.12px
+			line-height: 28px
+			margin-bottom 20px
+	p
+		display block
+		max-width 890px
+		ffR(20px)
+		letter-spacing: 0.43px
+		c cfblue
+		text-align center
+		line-height: 31px
+		margin 0 auto
+		@media screen and (max-width: 1160px)
+			font-size 18px
+			letter-spacing: 0.38px
+			line-height: 26px
+		@media screen and (max-width: 540px)
+			font-size 14px
+			letter-spacing: 0.3px
+			line-height: 20px
+.head-line--desc
+	margin-bottom 18px
+	user-select none
+	@media screen and (max-width: 540px)
+		font-size 12px
+		padding 7px 14px
+
+
+.head-line--desc
+	display inline-block
+	ffSB(14px)
+	letter-spacing: 0.8px
+	color cdblue
+	text-transform: uppercase
+	height: 25px
+	padding 6px 14px
+	border-radius: 24px
+	background-color: #e6f7f7
+
+
+/* Post Default */
+
+.post-default
+	max-width: 385px
+	min-height 510px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 6px
+	background-color: #ffffff
+	trn(.2s)
+	@media screen and (max-width: 480px)
+		max-width 270px
+		min-height 100%
+	&:hover
+		box-shadow 0 2px 16px 2px rgba(0,0,0,.2)
+	.post-default--img
+		position relative
+		height 200px
+		border-radius: 6px
+		overflow hidden
+		@media screen and (max-width: 480px)
+			height 140px
+		a
+			display inline-block
+			width 100%
+			height 100%
+		img
+			position absolute
+			top 50%
+			left 50%
+			width auto
+			height 102%
+			tt(-50%, -50%)
+	.post-default--text
+		padding 25px 30px 40px
+		@media screen and (max-width: 480px)
+			padding-bottom 23px
+			padding-top 14px
+		.more-link
+			@media screen and (max-width: 480px)
+				font-size 12px
+				margin-bottom 6px
+				svg
+					width 14px
+					height 14px
+		.head-line--post
+			display inline-block
+			padding 6px 15px
+			height: 25px
+			ffSB(12px)
+			letter-spacing: 0.69px
+			text-transform: uppercase
+			c cdblue
+			border-radius: 24px
+			background-color: #e6f7f7
+			margin-bottom 14px
+			user-select none
+			@media screen and (max-width: 480px)
+				margin-bottom 8px
+				font-size 10px
+				height 20px
+		h4
+			font-size 26px
+			line-height: 30px
+			margin-bottom 8px
+			// min-height 60px
+			max-width 290px
+			@media screen and (max-width: 480px)
+				font-size 20px
+				line-height 24px
+		.date-post
+			display block
+			min-height 24px
+			margin-bottom 4px
+			user-select none
+			ffR(12px)
+			c cfblue
+			letter-spacing: 0.26px
+			line-height: 24px
+		p
+			ffR(16px)
+			letter-spacing: 0.34px
+			line-height: 24px
+			color cfblue
+			margin-bottom 14px
+			max-height 72px
+			overflow hidden
+			@media screen and (max-width: 480px)
+				font-size 14px
+				letter-spacing: 0.3px
+				line-height: 20px
+				max-height 100%
+
+// Placeholder
+
+::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.2s ease;}
+::-moz-placeholder                {opacity: 1; transition: opacity 0.2s ease;}
+:-moz-placeholder                 {opacity: 1; transition: opacity 0.2s ease;}
+:-ms-input-placeholder            {opacity: 1; transition: opacity 0.2s ease;}
+:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.2s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.2s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.2s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.2s ease;}
+
+/* Custom input */
+
+.emailChecked
+	&.error
+		input
+			border-color #f0679e
+
+.customs-input
+	position relative
+	width 100%
+	&.error
+		input
+			border-color #f0679e
+	&.add-left--icon
+		.icon-figure
+			position absolute
+			top 2px
+			left 2px
+		input
+			padding-left 74px
+	&.add-right--icon
+		.icon-figure
+			position absolute
+			top 2px
+			right 2px
+		input
+			padding-right 74px
+	input
+		width 100%
+		height: 50px
+		padding-left 30px
+		padding-right 26px
+		border-radius: 25px
+		border: 2px solid #b2bac4
+		ffR(16px)
+		c cfblue
+		letter-spacing: 0.34px
+		line-height: 24px
+	.icon-figure
+		width 46px
+		height 46px
+		background: cdblue
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
+		brr(50%)
+		.icon-location
+			width 17px
+			height 24px
+			fill #fff !important
+
+/* Radio */
+
+.radio-items.col-6
+	width 50%
+	@media screen and (max-width: 480px)
+		width 100%
+		.radio
+			max-width 100%
+
+.radio
+	display: inline-block
+	margin-right: 8px
+	width 100%
+	max-width: 215px
+	@media screen and (max-width: 480px)
+		max-width 320px
+	&.error
+		p
+			border: 2px solid #f0679e
+	
+	&.radio-big
+		width 160px
+		height 160px
+		@media screen and (max-width: 768px)
+			width 128px
+			height 128px
+		.radio__text
+			flex-direction column
+			width 100%
+			height 100%
+			@media screen and (max-width: 540px)
+				padding 0 20px
+			@media screen and (max-width: 480px)
+				font-family: fB
+			.radio-icon
+				display flex
+				align-items center
+				justify-content center
+				min-height 60px
+				margin-bottom 20px
+				@media screen and (max-width: 768px)
+					margin-bottom 12px
+					img
+						max-height 55px
+						width auto
+	
+	&.radio-what-care
+		width 200px
+		height 200px
+		@media screen and (max-width: 480px)
+			width 130px
+			height 131px
+		.radio__text
+			flex-direction column
+			width 100%
+			height 100%
+			@media screen and (max-width: 480px)
+				padding 0
+			.radio-icon
+				display flex
+				align-items center
+				justify-content center
+				min-height 60px
+				margin-bottom 20px
+				@media screen and (max-width: 480px)
+					margin-bottom 12px
+					img
+						max-height 55px
+						width auto
+		
+
+.radio:last-child
+	margin-right: 0
+
+.radio input
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 10px 0 0 7px
+	display: none
+
+.radio__text
+	position: relative
+	display flex
+	align-items center
+	justify-content center
+	cursor: pointer
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	min-height: 48px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+	border: 2px solid #fff
+	color: cfblack
+	font-family: fSB
+	font-size: 16px
+	letter-spacing: 0.11px
+	trn(.2s)
+	@media screen and (max-width: 540px)
+		font-size 14px
+
+.radio input:checked + .radio__text
+	border: 2px solid #54bbbf
+
+/* Check-Box */
+
+.checkbox
+	display: block
+	margin-bottom: 14px
+
+.checkbox:last-child
+	margin-bottom: 0
+
+.checkbox input
+	display: none
+	z-index: -1
+	opacity: 0
+
+.checkbox__text
+	position: relative
+	ffR(18px)
+	c cfblue
+	letter-spacing: 0.38px
+	line-height: 31px
+	padding: 0 0 0 44px
+	cursor: pointer
+	display: inline-block
+	user-select: none
+	@media screen and (max-width: 414px)
+		font-size 14px
+		line-height 24px
+		padding-left 34px
+	&.error:before
+		border: 2px solid #f0679e
+	&:before
+		content: ''
+		position: absolute
+		top: 0px
+		left: 0
+		width: 26px
+		height: 26px
+		border: 2px solid #7f8b9c
+		background-color: #fff
+		//trn(.25s)
+		@media screen and (max-width: 414px)
+			width 20px
+			height 20px
+	a
+		c #54bbbf
+		text-decoration none
+
+.checkbox input:checked + .checkbox__text:before
+	background-image: url(../img/icon-svg/arrov.svg)
+	background-repeat: no-repeat
+	-webkit-transform: rotate(90deg)
+	transform: rotate(90deg)
+	background-position: center
+
+/* Select */
+
+.custom-select
+	position: relative
+	&.select-step
+		max-width 425px
+		margin 0 auto
+.custom-select select
+	display: none
+
+.select-selected.select-arrow-active:after
+	transform: rotate(-180deg)
+
+.select-selected
+	position relative
+	ffR(20px)
+	c cfblack
+	letter-spacing: 0.42px
+	text-align: left
+	height 50px
+	line-height 46px
+	padding-left 20px
+	padding-right 80px
+	max-width 425px
+	margin 0 auto
+	outline: none
+	border-radius: 25px
+	border: 2px solid #b2bac4
+	background-color: #fff
+	cursor: pointer
+	@media screen and (max-width: 540px)
+		font-size 14px
+		text-align center
+		padding 0 40px
+	&:before
+		position: absolute
+		right: 13px
+		top 16px
+		display: block
+		content: ""
+		height: 15px
+		width: 26px
+		background-image: url(../img/arrow-green.svg)
+		background-repeat: no-repeat
+
+.select-items div
+	ffR(18px)
+	letter-spacing: 0.38px
+	line-height: 32px
+	color: cfblack
+	padding: 6px 20px
+	cursor: pointer
+	@media screen and (max-width: 540px)
+		font-size 14px
+		line-height 20px
+
+.select-items
+	opacity: 1
+	visibility: visible
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	text-align left
+	background: #fff
+	padding 18px 0
+	z-index: 99
+	transition: all .1s ease-in-out
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2)
+	@media screen and (max-width: 540px)
+		max-height 170px
+
+.select-items div:hover
+	background: #e6f7f7
+
+.select-hide
+	opacity: 0
+	visibility: hidden
+	top: 140%
+
+.select-items div:hover,
+.same-as-selected
+	background: #e6f7f7
+
+.wrapper
+	max-width: 960px
+	margin: 80px auto
+.wrapper-item
+	width: 180px
+	padding: 0 10px
+	float: left
+
+// Posts Default
+
+.posts-wrapper
+	position relative
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	margin 0 -24px
+	@media screen and (max-width: 1024px)
+		margin 0 -15px
+	
+	.posts-item
+		padding 0 24px
+		width 33.3%
+		@media screen and (max-width: 1160px)
+			padding 0 24px 20px
+		@media screen and (max-width: 1024px)
+			padding 0 15px 20px
+		@media screen and (max-width: 855px)
+			width 50%
+		@media screen and (max-width: 600px)
+			width 100%
+			
+	
+	.posts-default
+		display: flex
+		flex-direction: column
+		align-items: center
+		width 100%
+		max-width: 385px
+		min-height: 385px
+		box-shadow: 0 2px 16px 2px rgba(0,0,0,.09)
+		border-radius: 5px
+		background-color: #fff
+		text-align: center
+		padding: 50px 20px
+		trn(.2s)
+		@media screen and (max-width: 1024px)
+			padding-top 50px
+		@media screen and (max-width: 600px)
+			margin auto
+		@media screen and (max-width: 540px)
+			min-height auto
+			padding 24px 20px
+			max-width 100%
+		&:hover
+			box-shadow 0 2px 16px 2px rgba(0,0,0,.2)
+	
+	.posts-img
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 80px
+		width: 100%
+		margin-bottom: 32px
+		@media screen and (max-width: 540px)
+			margin-bottom 0
+		
+		img
+			@media screen and (max-width: 854px)
+				// max-height 67px
+				// width auto
+			@media screen and (max-width: 540px)
+				max-height 67px
+				width: auto
+	
+	h3
+		ffB(36px)
+		margin-bottom: 10px
+		c cfblack
+		height 49px
+		@media screen and (max-width: 540px)
+			font-size 20px
+			height auto
+			line-height 24px
+	
+	p
+		display: block
+		max-width: 260px
+		ffR(16px)
+		color: cfblue
+		letter-spacing: 0.34px
+		line-height: 24px
+		@media screen and (max-width: 540px)
+			font-size 14px
+	
+	.more-link
+		margin-top 17px
+
+/* ScrollBar */
+/*
+::-webkit-scrollbar
+	width: 0
+	background-color: #6f6e70
+
+::-webkit-scrollbar-thumb
+	background-color: #353435
+
+::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+	background-color: #6f6e70
+
+::selection
+	background: #313031
+*/
+
+// Slider Care
+
+.slider-carers--item
+	width 400px
+	min-height: 280px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+	padding 26px 86px
+	@media screen and (max-width: 854px)
+		text-align center
+	@media screen and (max-width: 480px)
+		width 270px
+		padding 20px
+
+.slider-carers--img
+	position relative
+	width 150px
+	height 150px
+	overflow hidden
+	margin-bottom 12px
+	@media screen and (max-width: 854px)
+		margin 0 auto 12px
+	img
+		position absolute
+		top 50%
+		left 50%
+		width 100%
+		height auto
+		tt(-50%, -50%)
+
+.slider-carers--name
+	ffSB(23px)
+	c cfblack
+	line-height: 35px
+
+.slider-carers--university
+	ffR(18px)
+	c cfblack
+
+.slider-carers
+	padding-top 50px
+	@media screen and (max-width: 854px)
+		padding-top 0
+	.owl-stage-outer
+		padding: 20px 0
+	
+	.item
+		padding 0 40px
+
+// BG slide
+
+.section-slider
+	padding 40px 0 94px
+	&.Left .bg-slidebefore
+		left -250px
+	&.Right .bg-slide:before
+		right -250px
+		transform: rotateY(180deg)
+
+.bg-slide
+	position relative
+	max-width 100%
+	margin 0 auto
+	&:before
+		position absolute
+		top -40px
+		ttr(0, -50%)
+		display block
+		content ""
+		width 860px
+		height 781px
+		background-image: url(../img/bg-testimonials.svg)
+		background-repeat no-repeat
+		background-position 0 center
+		@media screen and (max-width: 600px)
+			background-size contain
+			height 760px
+		@media screen and (max-width: 540px)
+			width 800px
+			height 700px
+
+
+// accordeon
+
+.section-accordeon
+	position relative
+	.heading-default
+		font-size 22px
+		letter-spacing: -0.1px
+		line-height: 26px
+
+.accordeon
+	dl
+		min-height: 90px
+		box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+		border-radius: 5px
+		background-color: #ffffff
+		margin 0 0 24px
+	
+	dt
+		position relative
+		ffSB(21px)
+		c cfblack
+		line-height: 30px
+		min-height 90px
+		padding 30px 60px
+		cursor pointer
+		@media screen and (max-width: 768px)
+			padding 30px
+			padding-right: 60px
+		@media screen and (max-width: 480px)
+			display flex
+			align-items center
+			font-size 16px
+			line-height: 20px
+			padding: 15px 80px 20px 26px
+		&.active
+			&:before
+				transform rotateX(180deg)
+		&:before
+			position: absolute
+			right: 60px
+			top: 50%
+			margin-top: -7px
+			display: block
+			content: ""
+			height: 15px
+			width: 26px
+			background-image: url(../img/arrow-green.svg)
+			background-repeat: no-repeat
+			trn(.2s)
+			@media screen and (max-width: 768px)
+				right 30px
+			@media screen and (max-width: 540px)
+				top 40px
+				margin-top 0
+			@media screen and (max-width: 480px)
+				right 26px
+				top 25px
+	
+	dd
+		padding 0px 60px 30px
+		ffR(16px)
+		c cfblue
+		letter-spacing: 0.34px
+		line-height: 27px
+		margin 0
+		a
+			c #54bbbf
+			text-decoration none
+		@media screen and (max-width: 768px)
+			padding 10px 30px
+		@media screen and (max-width: 480px)
+			font-size 14px
+			letter-spacing: 0.3px
+			line-height: 20px
+			padding 0 24px 10px
+
+.heading-default
+	fsSB(38px)
+	c cfblack
+	letter-spacing: -0.17px
+	line-height: 49px
+	margin-bottom 38px
+	span
+		c cdblue
+
+// Pricing
+
+.section-pricing
+	padding 80px 0
+.pricing-main
+	position relative
+	display flex
+	flex-direction column
+	justify-content center
+	max-width: 915px
+	min-height: 320px
+	border-radius: 5px
+	overflow hidden
+	background-repeat no-repeat
+	margin 0px auto
+	text-align center
+	padding 20px
+	@media screen and (max-width: 540px)
+		background-size: cover
+		background-position: center
+	&:before
+		position absolute
+		top 0
+		left 0
+		content ""
+		display block
+		width 100%
+		height 100%
+		background: rgba(84, 187, 191, 0.8)
+	h3
+		position relative
+		c #fff
+		@media screen and (max-width: 540px)
+			font-size 20px
+			line-height 24px
+	p
+		position relative
+		ffR(20px)
+		letter-spacing: 0.43px
+		line-height: 31px
+		max-width 720px
+		c #fff
+		margin 30px auto 0
+		@media screen and (max-width: 540px)
+			font-size 14px
+			letter-spacing: 0.3px
+			line-height: 22px
+			margin-top 12px
+	.btn
+		margin-top 30px
+		align-self center
+
+// Star
+
+.section-stars
+	padding-top 65px
+	padding-bottom 71px
+
+.star-main
+	.satisfaction-rating
+		padding-left 0
+
+// Video
+
+.video-main.background-swirl
+	@media screen and (max-width: 600px)
+		min-height auto
+		&:before
+			display none
+
+.full-video
+	max-width 694px
+	margin 0 auto
+	padding 80px 0
+	@media screen and (max-width: 600px)
+		padding 20px 0
+
+// White Column
+
+.wrapper-white--column
+	margin 0 -30px
+	display flex
+	flex-direction row
+	@media screen and (max-width: 992px)
+		margin 0 -15px
+	@media screen and (max-width: 854px)
+		flex-direction column
+		align-items center
+
+	.white-block--big
+		padding 0 30px
+		@media screen and (max-width: 992px)
+			padding 0 15px
+		@media screen and (max-width: 854px)
+			margin-bottom 35px
+		@media screen and (max-width: 480px)
+			max-width: 300px;
+			text-align center
+		.white-column
+			max-width 758px
+			width 100%
+			@media screen and (max-width: 480px)
+				min-height auto
+				padding 28px 24px
+	
+	.white-block--small
+		padding 0 30px
+		@media screen and (max-width: 992px)
+			padding 0 15px
+		@media screen and (max-width: 480px)
+			max-width: 300px;
+			text-align center
+		.white-column
+			max-width 433px
+			width 100%
+			padding 50px 48px
+			@media screen and (max-width: 480px)
+				min-height auto
+				padding 28px 24px
+
+.white-column
+	min-height: 435px
+	padding 50px 60px 50px 50px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+
+.location-city
+	.heading-mini
+		@media screen and (max-width: 854px)
+			display none
+
+.white-column
+	.heading-mini
+		@media screen and (max-width: 480px)
+			max-width 220px
+
+.heading-mini
+
+	&.heading-offset
+		margin 40px 0
+	
+	&.heading-small
+		.head-line--desc
+			margin-bottom 16px
+		h2
+			margin-bottom 19px
+	
+	h2
+		font-size 38px
+		letter-spacing: -0.17px
+		margin-bottom 20px
+		@media screen and (max-width: 480px)
+			font-size 26px
+			line-height 28px
+		span.dotted-green
+			c cdblue
+		// @media screen and (max-width: 1160px)
+		// 	font-size 38px
+		// 	letter-spacing: -0.17px
+		// 	line-height: 49px
+		// @media screen and (max-width: 540px)
+		// 	font-size 26px
+		// 	letter-spacing: -0.12px
+		// 	line-height: 28px
+		// 	margin-bottom 20px
+	p
+		display block
+		max-width 890px
+		ffR(20px)
+		letter-spacing: 0.43px
+		c cfblue
+		line-height: 31px
+		margin 0 auto
+		@media screen and (max-width: 1160px)
+			font-size 18px
+			letter-spacing: 0.38px
+			line-height: 26px
+		@media screen and (max-width: 540px)
+			font-size 14px
+			letter-spacing: 0.3px
+			line-height: 20px
+	.head-line--desc
+		font-size 14px
+		margin-bottom 18px
+		min-width 155px
+		user-select none
+		text-align center
+		padding 5px 14px
+		@media screen and (max-width: 540px)
+			min-width auto
+			font-size 12px
+			padding 7px 14px
+
+.looking-care--custom
+	padding-top 20px
+	h4
+		margin-bottom 35px
+		@media screen and (max-width: 480px)
+			margin-bottom 10px
+			font-size 18px
+	
+	.radio
+		@media screen and (max-width: 600px)
+			max-width 100%
+			margin 5px 0
+
+.section-finds
+	padding 30px 0
+
+.request-small
+	padding-top 24px
+	p
+		ffR(20px)
+		letter-spacing: 0.13px
+		c cfblack
+		margin-bottom 36px
+		@media screen and (max-width: 480px)
+			font-size 14px
+		span
+			font-family: fSB
+
+.section-home-care
+	padding 50px 0 46px
+	@media screen and (max-width: 480px)
+		padding-bottom 24px
+	.home-care--wrapper
+		margin 37px 0 0
+
+.home-care--wrapper
+	display flex
+	flex-wrap wrap
+	justify-content center
+	margin 0 -5px
+
+.home-care--item
+	padding 5px
+	@media screen and (max-width: 480px)
+		width 50%
+
+.home-care--tablet
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	width 198px
+	height 200px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+	@media screen and (max-width: 480px)
+		width 100%
+	@media screen and (max-width: 414px)
+		height 172px
+	@media screen and (max-width: 360px)
+		height 145px
+	@media screen and (max-width: 320px)
+		height 125px
+	
+	a
+		text-decoration none
+		color #4a4a4a
+	
+	.radio-icon
+		display: flex
+		align-items: center
+		justify-content: center
+		min-height: 105px
+		margin-bottom: 10px
+		@media screen and (max-width: 480px)
+			min-height: 60px
+			img
+				max-height 57px
+	
+	.home-care--text
+		text-align center
+		ffB(23px)
+		letter-spacing: -0.1px
+		line-height: 23px
+		color #4a4a4a
+		@media screen and (max-width: 480px)
+			font-size 1.2rem
+		@media screen and (max-width: 320px)
+			font-size 15px
+
+.section-location
+	padding 32px 0 36px
+	@media screen and (max-width: 480px)
+		padding-bottom 24px
+		padding-top 20px
+.location-main
+	display flex
+	margin 0 -25px
+	@media screen and (max-width: 992px)
+		margin 0 -15px
+	@media screen and (max-width: 854px)
+		flex-direction column
+
+	.heading-location--mobile
+		display none
+		@media screen and (max-width: 854px)
+			display block
+			order 1
+			margin-bottom 35px
+		@media screen and (max-width: 480px)
+			margin-bottom 8px
+		
+		.heading-mini
+			text-align center
+
+	.location-map,
+	.location-city
+		padding 0 25px
+		width 50%
+		@media screen and (max-width: 992px)
+			padding 0 15px
+		@media screen and (max-width: 854px)
+			width 100%
+	
+	.location-map
+		@media screen and (max-width: 854px)
+			order 2
+			margin-bottom 35px
+		iframe
+			width 100%
+	
+	.location-city
+		@media screen and (max-width: 854px)
+			order 3
+
+.list-city
+	display flex
+	max-width 600px
+	@media screen and (max-width: 540px)
+		box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+		border-radius: 5px
+		background-color: #ffffff
+		display block
+		padding 10px 26px
+
+	.select-city
+		position relative
+		display none
+		ffSB(16px)
+		color: #4a4a4a
+		line-height: 30px
+		&.is-active
+			&:before
+				transform: rotateX(180deg)
+
+		@media screen and (max-width: 540px)
+			display block
+		&:before
+			position: absolute
+			right: 0
+			top: 9px
+			display: block
+			content: ""
+			height: 15px
+			width: 26px
+			background-image: url(../img/arrow-green.svg)
+			background-repeat: no-repeat
+			transition: all .25s ease-out
+	ul
+		width 100%
+		display flex
+		flex-direction: column
+		flex-wrap: wrap
+		max-height: 260px
+		@media screen and (max-width: 992px)
+			max-height 430px
+		@media screen and (max-width: 854px)
+			max-height 270px
+		@media screen and (max-width: 540px)
+			display none
+			padding-top 20px
+			max-height 100%
+		li
+			margin-bottom 14px
+			width 33.3%
+			@media screen and (max-width: 540px)
+				width 100%
+			a
+				ffR(16px)
+				c cfblack
+				letter-spacing: 0.1px
+				text-decoration none
+
+.section--related-links
+	padding 43px 0 34px
+	@media screen and (max-width: 480px)
+		padding-top 24px
+
+.related-links--heading
+	margin-bottom 16px
+	@media screen and (max-width: 480px)
+		margin-bottom 26px
+	h3
+		@media screen and (max-width: 480px)
+			font-size 22px
+			letter-spacing: -0.1px
+			line-height: 26px
+			margin-bottom 6px
+	p
+		ffR(16px)
+		letter-spacing: 0.34px
+		line-height: 24px
+		c cfblue
+		@media screen and (max-width: 480px)
+			font-size 12px
+			letter-spacing: 0.25px
+			line-height: 20px
+
+.related-links
+	ul
+		li
+			a
+				ffSB(16px)
+				c cdblue
+				letter-spacing: 0.34px
+				line-height: 27px
+				text-decoration none
+				@media screen and (max-width: 480px)
+					font-size 14px
+					letter-spacing: 0.3px
+					line-height: 22px

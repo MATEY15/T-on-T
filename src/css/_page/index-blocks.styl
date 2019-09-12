@@ -1,0 +1,676 @@
+.looking-care
+	padding-top 88px
+	padding-bottom 96px
+	overflow hidden
+	@media screen and (max-width: 768px)
+		padding-top 50px
+		display flex
+		align-items center
+	@media screen and (max-width: 540px)
+		margin-bottom 70px
+	@media screen and (max-width: 480px)
+		padding-top 25px
+		margin-bottom 20px
+.looking-care--wrapper
+	margin 0 -47px
+	display flex
+	flex-direction row
+	@media screen and (max-width: 1024px)
+		margin 0 -20px
+	@media screen and (max-width: 600px)
+		margin 0 -10px
+	@media screen and (max-width: 480px)
+		flex-direction column
+	.looking-care--items
+		padding 0 47px
+		width 50%
+		&:first-child
+			@media screen and (max-width: 480px)
+				margin-bottom 20px
+		@media screen and (max-width: 1024px)
+			padding 0 20px
+		@media screen and (max-width: 600px)
+			padding 0 10px
+		@media screen and (max-width: 480px)
+			width 100%
+
+.looking-care--content
+	position relative
+	max-width: 579px
+	min-height: 384px
+	display flex
+	flex-direction column
+	align-self center
+	color #fff
+	text-align center
+	border-radius: 5px
+	padding 20px
+	padding-top 110px
+	background-repeat no-repeat !important
+	background-position: center !important
+	background-size cover !important
+	overflow hidden
+	@media screen and (max-width: 854px)
+		padding-top 65px
+	@media screen and (max-width: 768px)
+		min-height 260px
+	@media screen and (max-width: 480px)
+		min-height 180px
+		padding-top 28px
+	&:before
+		bff()
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background-color: rgba(0, 0, 0, 0.35)
+	h3, p
+		position relative
+	h3
+		ffSB(36px)
+		color #fff
+		line-height: 49px
+		margin-bottom 10px
+		@media screen and (max-width: 768px)
+			font-size 20px
+			letter-spacing: -0.09px
+			line-height: 24px
+	p
+		ffSB(21px)
+		color #fff
+		line-height: 30px
+		margin-bottom 24px
+		min-height 60px
+		@media screen and (max-width: 768px)
+			font-size 14px
+			line-height: 18px
+			min-height 40px
+			margin-bottom 15px
+		@media screen and (max-width: 480px)
+			margin 0 auto 8px
+			max-width 220px
+		br
+			@media screen and (max-width: 854px)
+				display none
+	.btn
+		align-self: center
+		ffSB(18px)
+		min-width: 155px
+		height: 50px
+		letter-spacing: 0.11px
+		
+.care-step
+	padding-top 32px
+	overflow hidden
+	&>.container
+		@media screen and (max-width: 854px)
+			padding 0
+	.mobile-navigation
+		display none
+		margin-top 20px
+		margin-bottom 30px
+		@media screen and (max-width: 854px)
+			display flex
+
+.care-step--wrapper
+	padding-bottom 35px
+	@media screen and (max-width: 768px)
+		padding-bottom 50px
+	@media screen and (max-width: 540px)
+		padding-bottom 20px
+	
+	.heading-main
+		@media screen and (max-width: 414px)
+			padding-left 25px
+			padding-right 25px
+
+.care-step--main
+	position relative
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	margin 0 -24px
+	padding-top 60px
+	padding-bottom 100px
+	overflow hidden
+	@media screen and (max-width: 1160px)
+		margin 0 -10px
+	@media screen and (max-width: 854px)
+		padding-bottom 0
+		margin 0
+	@media screen and (max-width: 540px)
+		padding-top 0
+	@media screen and (max-width: 414px)
+		margin 0
+	&:before
+		bff()
+		top 0px
+		left 50%
+		tt(-50%, 0)	
+		width 750px
+		height 550px
+		background-image: url(../img/background_bubble.svg)
+		background-repeat no-repeat
+		background-position: center
+		@media screen and (max-width: 600px)
+			background-size contain
+			width 540px
+			height 500px
+
+.owl-mobile
+	.owl-stage
+		padding-bottom 20px
+		@media screen and (max-width: 540px)
+			padding-top 20px
+
+.care-step--items
+	position relative
+	padding 0 24px
+	width 33.3%
+	@media screen and (max-width: 1160px)
+		padding 0 10px
+	@media screen and (max-width: 854px)
+		width 100%
+	@media screen and (max-width: 414px)
+		padding 0
+	&.arrot-top---next
+		&:before
+			bff()
+			top -47px
+			right -80px
+			width 126px
+			height 22px
+			background-image: url(../img/arrow-figure1.svg)
+			background-repeat no-repeat
+	&.arrot-bottom---next
+		&:before
+			bff()
+			bottom -47px
+			right -80px
+			width 126px
+			height 22px
+			background-image: url(../img/arrow-figure1.svg)
+			background-repeat no-repeat
+			transform rotateX(180deg)
+	.steps
+		display flex
+		flex-direction column
+		align-items center
+		max-width: 385px
+		min-height: 425px
+		box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+		border-radius: 5px
+		background-color: #ffffff
+		text-align center
+		padding 65px 20px 15px
+		trn(.2s)
+		@media screen and (max-width: 600px)
+			min-height 220px
+			max-width 270px
+			padding-top 24px
+		&:hover
+			box-shadow: 0 2px 16px 2px rgba(0,0,0,.2)
+		.steps-img
+			display flex
+			justify-content center
+			align-items center
+			height 80px
+			width 100%
+			margin-bottom 26px
+			@media screen and (max-width: 600px)
+				height 50px
+				margin-bottom 0
+			img
+				width: auto
+				@media screen and (max-width: 600px)
+					width 50px
+		h3,
+		p
+			max-width 260px
+		h3
+			ffB(36px)
+			line-height: 49px
+			margin-bottom 2px
+			@media screen and (max-width: 600px)
+				font-size 20px
+				margin-bottom: 0
+				line-height: 32px
+		p
+			ffB(23px)
+			line-height: 30px
+			color cfblack
+			margin-bottom 22px
+			@media screen and (max-width: 600px)
+				ffSB(16px)
+				letter-spacing: -0.2px
+				line-height: 18px
+				margin-bottom 8px
+		span
+			display block
+			max-width 260px
+			ffR(16px)
+			color cfblue
+			letter-spacing: 0.34px
+			line-height: 24px
+			@media screen and (max-width: 600px)
+				font-size 14px
+				letter-spacing: 0.3px
+				line-height: 16px
+
+.button--care-step
+	text-align center
+	@media screen and (max-width: 480px)
+		display none
+
+.advice-support--repeat
+	padding-top 46px
+	padding-bottom 34px
+	overflow hidden
+	@media screen and (max-width: 480px)
+		padding-bottom 24px
+	.heading-main
+		margin-bottom 32px
+
+.advice-support--categories
+	background: #F9F7FD
+	padding-top 68px
+	padding-bottom 8px
+	@media screen and (max-width: 1024px)
+		padding-bottom 70px
+	@media screen and (max-width: 640px)
+		padding-top 34px
+		padding-bottom 34px
+	
+	.advice-support--main
+		flex-wrap wrap
+		@media screen and (max-width: 1024px)
+			margin 0 - 15px
+	
+	.advice-support--items
+		width calc(100% / 3)
+		display block !important
+		@media screen and (max-width: 1024px)
+			padding 0 15px
+		@media screen and (max-width: 991px)
+			width calc(100% / 2)
+		@media screen and (max-width: 640px)
+			width 100%
+	
+	.head-categories
+		color: #4a4a4a
+		font-family: fSB
+		font-size: 38px
+		letter-spacing: -0.17px
+		line-height: 49px
+		margin-bottom 45px
+		@media screen and (max-width: 640px)
+			text-align center
+			font-size: 1.625rem
+			letter-spacing: -.0075rem
+			line-height: 1.75rem
+
+.categories-item
+	position relative
+	width: 100%
+	max-width 385px
+	margin 0 auto 45px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	overflow hidden
+	@media screen and (max-width: 1024px)
+		margin-bottom 30px
+	
+	a
+		position relative
+		display inline-block
+		width: 100%
+		max-width 385px
+		min-height: 385px
+		text-align center
+		color #fff
+		text-decoration none
+		padding 68px 40px 40px
+		@media screen and (max-width: 1100px)
+			padding 50px 20px 30px
+		@media screen and (max-width: 640px)
+			min-height auto
+
+		&:before
+			position absolute
+			top 0
+			left 0
+			content ""
+			width 100%
+			height 100%
+			background-color: rgba(84, 187, 191, 0.7)
+			z-index 10
+	img
+		position absolute
+		imgC()
+	
+	.categories-item--text
+		position relative
+		z-index 20
+		h4
+			color: #ffffff
+			font-family: fB
+			font-size: 36px
+			line-height: 49px
+			margin-bottom 12px
+			min-height 98px
+		p
+			color: #ffffff
+			font-family: fR
+			font-size: 16px
+			letter-spacing: 0.34px
+			line-height: 24px
+			max-width 265px
+			margin 0 auto 20px
+		.icon-more
+			width 50px
+			height 50px
+			fill #fff
+
+.advice-support
+	padding-top 78px
+	padding-bottom 80px
+	background: bglpink
+	overflow hidden
+	@media screen and (max-width: 600px)
+		padding-top 50px
+		padding-bottom 50px
+	.heading-main
+		margin-bottom 32px
+	
+	.button-wrapper
+		text-align center
+
+.advice-support--main
+	position relative
+	display flex
+	flex-direction row
+	margin 0 -24px
+	margin-bottom 48px
+	@media screen and (max-width: 1024px)
+		justify-content center
+	@media screen and (max-width: 640px)
+		margin 0 -10px
+		margin-bottom 40px
+		
+	.advice-support--items
+		padding 0 24px
+		@media screen and (max-width: 640px)
+			padding 0 10px
+		&:last-child
+			@media screen and (max-width: 1024px)
+				display none
+		&:nth-last-child(-n+2)
+			@media screen and (max-width: 600px)
+				display none
+
+// Testimonials
+
+.testimonials
+	background: #fff
+	padding-top 82px
+	padding-bottom 154px
+	position relative
+	overflow hidden
+	&.Left .bg-testimonials:before
+		left -250px
+	&.Right .bg-testimonials:before
+		right -250px
+		transform: rotateY(180deg)
+	@media screen and (max-width: 600px)
+		padding-bottom 100px
+	.bg-testimonials
+		position relative
+		max-width 100%
+		margin 0 auto
+		
+		&:before
+			position absolute
+			top -48px
+			ttr(0, -50%)
+			display block
+			content ""
+			width 860px
+			height 781px
+			background-image: url(../img/bg-testimonials.svg)
+			background-repeat no-repeat
+			background-position 0 center
+			@media screen and (max-width: 600px)
+				background-size contain
+				height 760px
+			@media screen and (max-width: 540px)
+				width 800px
+				height 700px
+	.slider-testimonials,
+	.container
+		position relative
+	
+	.slider-testimonials
+		@media screen and (max-width: 720px)
+			// padding 0 25px
+
+	.owl-item
+		trn(.25s)
+		&.center
+			opacity 1
+			.testimonial-name,
+			.testimonial-content
+				opacity 1
+	.item
+		padding 26px 0
+
+.testimonials-items
+	display flex
+	flex-direction row
+	min-width: 710px
+	max-width 710px
+	min-height: 290px
+	box-shadow: 0 2px 16px 2px rgba(0, 0, 0, 0.09)
+	border-radius: 5px
+	background-color: #ffffff
+	padding 54px
+	@media screen and (max-width: 720px)
+		min-width auto
+		max-width 640px
+		flex-direction column-reverse
+	@media screen and (max-width: 640px)
+		max-width 540px
+	@media screen and (max-width: 540px)
+		max-width 440px
+		padding 26px
+	@media screen and (max-width: 440px)
+		max-width 320px
+	@media screen and (max-width: 320px)
+		max-width 270px
+	.star-wrapper
+		.star-article
+			width 32px
+			height 25px
+		.icon-star
+			width 29px
+			height 25px
+			
+	.testimonial-name
+		position relative
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
+		min-width 130px
+		opacity .6
+		padding-right 30px
+		margin-right 40px
+		@media screen and (max-width: 720px)
+			margin-top 30px
+			margin-right 0
+			padding-right 0
+		&:before
+			bff()
+			width 2px
+			height 135px
+			top 50%
+			right 0
+			tt(0, -50%)
+			background: cfblue
+			@media screen and (max-width: 720px)
+				display none
+		
+		p
+			ffSB(20px)
+			line-height: 30px
+			c cfblack
+		span
+			ffR(16px)
+			c cfblue
+			letter-spacing: 0.34px
+			line-height: 24px
+
+	.testimonial-content
+		display flex
+		flex-direction column
+		justify-content center
+		opacity .6
+		@media screen and (max-width: 720px)
+			text-align center
+		.main-rating--star
+			@media screen and (max-width: 720px)
+				margin 0 auto
+		p
+			ffR(20px)
+			letter-spacing: 0.43px
+			line-height: 23px
+			c cfblue
+			margin-bottom 12px
+
+.wrapper-navigation
+	@media screen and (max-width: 480px)
+		margin-top 7px
+
+.wrapper-navigation,
+.mobile-navigation,
+.slider-carers-nav
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	margin-top 50px
+
+.slider-carers-nav
+	margin-top 40px
+
+.slider_nav
+	.owl-prev,
+	.owl-next
+		cursor pointer
+		opacity .6
+		trn(.2s)
+		&:hover
+			opacity 1
+		svg
+			width 50px
+			height 50px
+			@media screen and (max-width: 480px)
+				width 30px
+				height 30px
+	.owl-prev
+		margin-right 18px
+		svg
+			transform rotateY(180deg)
+
+.slider_dot
+	max-width 970px
+	height: 5px
+	border-radius: 3px
+	background-color: #e6f7f7
+	display flex
+	flex-direction row
+	flex-grow 1
+	@media screen and (max-width: 1160px)
+		margin-right 42px
+	.owl-dot
+		flex-grow 1
+		background: #e6f7f7
+		height 5px
+		trn(.5s)
+		cursor pointer
+		&.active
+			border-radius: 3px
+			background-color: #54bbbf
+
+// Subscribe
+.subscribe-wrapper
+	padding-top 62px
+	padding-bottom 20px
+	@media screen and (max-width: 854px)
+		padding-top 0
+	@media screen and (max-width: 480px)
+		padding-bottom 46px
+
+.subscribe-form
+	position relative
+	max-width: 535px
+	height: 50px
+	border-radius: 24px
+	border: 2px solid #b2bac4
+	margin 58px auto
+	@media screen and (max-width: 480px)
+		display none
+	input
+		height: 46px
+		width 100%
+		border-radius: 24px
+		padding 12px 184px 12px 26px
+		ffR(16px)
+		letter-spacing: 0.34px
+		line-height: 24px
+		c cfblue
+		&::-webkit-input-placeholder
+			ffR(16px)
+			letter-spacing: 0.34px
+			line-height: 24px
+			c cfblue
+		&::-moz-placeholder
+			ffR(16px)
+			letter-spacing: 0.34px
+			line-height: 24px
+			c cfblue
+		&:-moz-placeholder
+			ffR(16px)
+			letter-spacing: 0.34px
+			line-height: 24px
+			c cfblue
+		&:-ms-input-placeholder
+			ffR(16px)
+			letter-spacing: 0.34px
+			line-height: 24px
+			c cfblue
+	
+	.subscribe-btn
+		position: absolute
+		top: -2px
+		right: -3px
+		height: 50px
+		min-width 155px
+
+.subscribe-form--mobile
+	display none
+	margin-top 20px
+	@media screen and (max-width: 480px)
+		display block
+	
+	input
+		width 100%
+		height: 50px
+		padding 0 20px
+		text-align center
+		border-radius: 24px
+		border: 2px solid #7f8b9c
+		opacity: 0.6
+		margin-bottom 14px
+	
+	.subscribe-form--mobile-btn
+		text-align center

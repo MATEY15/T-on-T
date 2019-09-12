@@ -1,0 +1,69 @@
+-var mobMenu1 = [{link: "#", name: "Hourly care"},{link: "#", name: "Overnight care"},{link: "#", name: "Live-in care"}]
+-var mobMenu2 = [{link: "#", name: "Arranging care"},{link: "#", name: "Prices"},{link: "#", name: "Our carers"}]
+-var mobMenu3 = [{link: "#", name: "Personal care"},{link: "#", name: "Dementia care"},{link: "#", name: "Alzheimers care"},{link: "#", name: "Respite care"},{link: "#", name: "End of life care"},{link: "#", name: "Cancer care"},{link: "#", name: "Companionship care"}]
+-var mobMenu4 = [{link: "#", name: "Arranging care"},{link: "#", name: "Prices"},{link: "#", name: "Our carers"}]
+
+.header-mobile
+	.mobile-menu
+		.container.mobile-menu--container
+			.logo-mobile
+				a(href="#")
+					img(src="img/logo-head.svg", alt="Logo", width="160px")
+			.right--mobile-head
+				.callback.callback-mobile
+					a(href="#").callback--request Request callback
+					a(href="tel:08082781112").callback--phone 0808 278 1112
+				.menu-open
+					span menu
+					.drop-menu
+						span.drop-line--big
+						span.drop-line--small
+
+	.menu-mobile--hide
+		.container
+			ul.menu-mobile--list
+				li
+					span Home care services
+					.sub-menu-mobile
+						h6 Home care services
+						+mobileMenu(mobMenu1)
+						h6 How it works
+						+mobileMenu(mobMenu2)
+				li
+					span Specialist care
+					.sub-menu-mobile
+						h6 Specialist care
+						+mobileMenu(mobMenu3)
+				li
+					span Advice & Support
+					.sub-menu-mobile
+						h6 Advice & Support
+						+mobileMenu(mobMenu4)
+				li
+					span About us
+					.sub-menu-mobile
+						h6 About us
+						+mobileMenu(mobMenu4)
+
+			.button--mobile-hide
+				a(href="#").btn.btn-green.size-btn
+					span Find a carer
+				br
+				a(href="#").btn.btn-whitebr.size-btn
+					span Find a carer job
+
+			.callback-hide.callback
+				a(href="#").callback--request Request callback
+				a(href="tel:08082781112").callback--phone 0808 278 1112
+
+			.ligin-mobile
+				a(href="#")
+					| Existing customer login
+					svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")
+
+			.location-mobile--wrapper
+				a(href="#").location-mobile
+					svg(width="9" height="13" viewBox="0 0 9 13").icon-location
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-location")
+					| Banbury

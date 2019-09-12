@@ -1,0 +1,84 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Typography'
+
+block header
+	include include/header
+
+block main
+	main.section_main
+		.container
+			h3 Buttons & Link Styles
+			br
+			br
+			.prewiev-button
+				.prewiev-button--items
+					a(href="#").btn.btn-green
+						span I’m looking for a care
+					button.btn.btn-green
+						span I’m looking for a care
+					input(type="button" value="I’m looking for a care").btn-default.btn-green
+				.prewiev-button--items
+					a(href="#").btn.btn-darkGreen
+						span I’m looking for a care
+					button.btn.btn-darkGreen
+						span I’m looking for a care
+					input(type="button" value="I’m looking for a care").btn-default.btn-darkGreen
+				.prewiev-button--items
+					a(href="#").btn.btn-white
+						span I’m looking for a care
+					button.btn.btn-white
+						span I’m looking for a care
+					input(type="button" value="I’m looking for a care").btn-default.btn-white
+
+			br
+			br
+			br
+
+			.star-wrapper
+				span.star-article
+					svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+				span.star-article
+					svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+				span.star-article
+					svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+				span.star-article
+					svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+				span.star-article
+					svg(width="34" height="32" viewBox="0 0 34 32").icon-star
+						use(xlink:href="img/icon-svg/sprite-icon.svg#icon-star")
+
+			br
+			br
+			br
+			br
+
+
+			h3 - Style Sheet
+			br
+			br
+			h1 Better quality home care, for a better quality of life.
+			br
+			br
+			h2 Better quality home care, for a better quality of life.
+			br
+			br
+			h3 Better quality home care, for a better quality of life.
+			br
+			br
+			h4 Better quality home care, for a better quality of life.
+			br
+			br
+			h5 Better quality home care, for a better quality of life.
+			br
+			br
+			h6 Better quality home care, for a better quality of life.
+			br
+			br
+
+		

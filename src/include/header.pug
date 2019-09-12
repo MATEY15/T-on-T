@@ -1,0 +1,51 @@
+header
+	.header
+		.container.wrapper-header--flex
+			.left-block--header
+				.location
+					p
+						span.icon-sprite
+							svg(width="9" height="13" viewBox="0 0 9 13").icon-location
+								use(xlink:href="img/icon-svg/sprite-icon.svg#icon-location")
+						| Banbury
+				nav.main-menu
+					ul.menu-top
+						li.sub-list
+							a(href="#") Home care services
+							include header/sub-menu/sub-menu--home
+
+						li.sub-list
+							a(href="#") Specialist care
+							include header/sub-menu/sub-menu--specialist
+
+						li.sub-list
+							a(href="#") Advice & support
+							include header/sub-menu/sub-menu--advice
+
+						li.sub-list
+							a(href="#") About us
+							include header/sub-menu/sub-menu--about
+
+
+			.right-block--header
+				.callback
+					a(href="#").callback--request Request callback
+					a(href="tel:08082781112").callback--phone 0808 278 1112
+				.login
+					a(href="#location-popup").popup Login
+					
+	include header/mobile-menu
+	.header-line--wrapper
+		.container
+			.header-line
+				.logo-block
+					a(href="#").logo-main
+						img(src="img/logo-head.svg", alt="Logo")
+				.header-line--button
+					a(href="#").btn.btn-darkGreen.mobile-show
+						span I’m looking for a care job
+					a(href="tel:08082781112").phone-head 0808 278 1112
+					a(href="#").btn.btn-whitebr.mobile-hide
+						span I’m looking for a care job
+					a(href="find-carer.html").btn.btn-green
+						span I’m looking for a care

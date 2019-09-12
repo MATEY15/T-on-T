@@ -1,0 +1,294 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Find Carer'
+
+block header
+	include include/header-line
+
+block main
+	main.section_main
+		
+		section.find-carer--wrapper
+			.container
+				.popup-step.zoom-anim-dialog#step-form
+					a(href="index.html").custom-close--link
+						| Close
+						svg(width="35" height="35" viewBox="0 0 35 35").icon-close
+							use(xlink:href="img/icon-svg/sprite-icon.svg#close")
+					.container-popup
+						+heading("FIND A CARER", "Find a trusted, local carer today", "Simply let us know about the care you need, and we can match you with the most suitable carers for you.")
+
+						.wrapper--form-step
+							form(method="POST").formValidate
+								.form-step--items.step-hide(data-step="15")
+									.step-one#step-one
+										h4 I’m looking for care for…
+										.step-radio--wrapper
+											label.radio
+												input(type="radio" name="radio_step_one")#myself
+												p.radio__text Myself
+											label.radio
+												input(type="radio" name="radio_step_one")#someone
+												p.radio__text Someone else
+									.step-navigation
+										button(type="button")#stepOne.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="5")
+									.step-two#step-two
+										h4 I would like to arrange care for my…
+										.select-form
+											.custom-select.select-step
+												select
+													option(value="0") Mother
+													option(value="1") Mother
+													option(value="2") Father
+													option(value="3") Mother-in-law
+													option(value="4") Father-in-law
+													option(value="5") Brother
+													option(value="6") Sister
+													option(value="7") Grandparent
+													option(value="8") Neighbour
+													option(value="9") Friend
+													option(value="10") Husband
+													option(value="11") Wife
+													option(value="12") Other
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepTwo.btn-default.btn-darkGreen.size-btn.next-steps next
+								
+								.form-step--items.step-hide(data-step="10")
+									.step-three#step-three
+										h4 How mobile is your mother?
+										.radio-parents
+											.radio-parents--items
+												label.radio.radio-big
+													input(type="radio" name="radio-three" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/icon-radio1.svg", alt="")
+														| Very active
+											.radio-parents--items
+												label.radio.radio-big
+													input(type="radio" name="radio-three" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/icon-radio2.svg", alt="")
+														| Quite active
+											.radio-parents--items
+												label.radio.radio-big
+													input(type="radio" name="radio-three" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/icon-radio3.svg", alt="")
+														| Limited mobility
+											.radio-parents--items
+												label.radio.radio-big
+													input(type="radio" name="radio-three" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/icon-radio4.svg", alt="")
+														| Wheelchair user
+											.radio-parents--items
+												label.radio.radio-big
+													input(type="radio" name="radio-three" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/icon-radio5.svg", alt="")
+														| Bedbound
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepThree.btn-default.btn-darkGreen.size-btn.next-steps next
+										
+								.form-step--items.step-hide(data-step="30")
+									.step-four#step-four
+										.what-care--heading
+											h4 And what types of care are you looking for?
+											p Select as many as appropriate
+										.radio--what-care
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox1")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care1.svg", alt="")
+														| Personal care hygiene
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox2")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care2.svg", alt="")
+														| Dementia 
+														br
+														| care
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox3")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care3.svg", alt="")
+														| General home help
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox4")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care4.svg", alt="")
+														| Companionship
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox5")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care5.svg", alt="")
+														| Food preparation
+														br
+														| & Shopping
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox6")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care6.svg", alt="")
+														| Transportation
+														br
+														| & Errands
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox7")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care7.svg", alt="")
+														| Gardening &
+														br
+														| House Maintenance
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="checkbox" name="radio-checkbox8")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/what-care8.svg", alt="")
+														| Paperwork & 
+														br
+														| Administration
+										
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepFour.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="20")
+									.step-five#step-five
+										h4 Would you like a carer to visit…
+										.radio--what-care
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="radio" name="radio-five" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/carer-visit1.svg", alt="")
+														| Hourly
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="radio" name="radio-five" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/carer-visit2.svg", alt="")
+														| Overnight
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="radio" name="radio-five" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/carer-visit3.svg", alt="")
+														| Live-in
+											.what-care--items
+												label.radio.radio-what-care
+													input(type="radio" name="radio-five" required="")
+													p.radio__text
+														span.radio-icon
+															img(src="img/form-step/carer-visit4.svg", alt="")
+														| I’m not sure
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepFive.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="0")
+									.step-six
+										h4 What’s the postcode of the care recipient?
+										.customs-input.add-left--icon
+											input(placeholder="enter postcode")#postCode
+											.icon-figure
+												svg(width="9" height="13" viewBox="0 0 9 13").icon-location
+													use(xlink:href="img/icon-svg/sprite-icon.svg#icon-location")
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepSix.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="0")
+									.step-seven#step-seven
+										h4 Please may we know your first name?
+										.customs-input
+											input(placeholder="first name")#firstName
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepSeven.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="0")
+									.step-eight#step-eight
+										h4 and your last name?
+										.customs-input
+											input(placeholder="last name")#lastName
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepEight.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="5")
+									.step-nine#step-nine
+										h4 email address
+										.customs-input.add-left--icon
+											input(placeholder="email address").emailChecked
+											.icon-figure
+												svg(width="22" height="16" viewBox="0 0 22 16").icon-message
+													use(xlink:href="img/icon-svg/sprite-icon.svg#icon-message")
+
+										.step-navigation
+											button(type="button").btn-default.btn-white.size-btn.prev-steps previous
+											button(type="button")#stepNine.btn-default.btn-darkGreen.size-btn.next-steps next
+
+								.form-step--items.step-hide(data-step="10")
+									.step-ten#step-ten
+										h4 Finally, what’s the best phone number to reach you on
+										.customs-input.add-left--icon
+											input(placeholder="phone number")#phoneNumber
+											.icon-figure
+												svg(width="20" height="20" viewBox="0 0 20 20").icon-phone
+													use(xlink:href="img/icon-svg/sprite-icon.svg#icon-phone")
+										.check-box--default
+											label.checkbox#consent
+												input(type="checkbox" name="consent")
+												p.checkbox__text I received too many emails from SpriggHR.
+
+									.step-navigation
+											button(type="submit" disabled)#stepTen.btn-default.btn-darkGreen.size-btn find a carer
+
+						//- .step-navigation
+						//- 	button.btn.btn-white.size-btn.prev-steps
+						//- 		span previous
+						//- 	button.btn.btn-darkGreen.size-btn.next-steps
+						//- 		span next
+
+						.wrapper--load-step
+							p
+								span.count-step 15% 
+								| completed
+							#loading-step
+								span
+
+		include include/block/speak-to-us.pug

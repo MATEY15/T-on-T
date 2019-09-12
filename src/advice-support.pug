@@ -1,0 +1,69 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Brief'
+	- var headers = true
+	- var textHeading = "Whatever support and care you need, we are here to help. We match you or your family with experienced, understanding and certified carers who can assist with everything from simple companionship and general assistance about the home, to more involved care for those with dementia or end of life needs - at prices you can afford."
+
+	-var support1 = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit magna, maximus eu luctus dapibus, vestibulum in."]
+
+block header
+	include include/header
+
+	.header-content
+		.container
+			.content-head--two-b
+				.content-two-a-bg
+					.img-mask.mask-go.mask-two
+						img(src="img/bg-top.jpg", alt="grandmother")
+				.content-head--unflex
+					.content-head--small
+						h1 Advice & support
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.
+						
+						.form-block
+							p Where do you need care?
+							.form-block--input.add-right--icon
+								form
+									input(type="text" placeholder="enter postcode")
+									button.btn.btn-darkGreen.size-btn
+										span Find a carer
+										svg(width="20" height="20" viewBox="0 0 20 20").icon-more
+											use(xlink:href="img/icon-svg/sprite-icon.svg#icon-more")
+			
+block main
+	main.section_main
+
+		section.advice-support--repeat
+			.container
+				+headingLeft("Lorem ipsum dolor sit amet consectetur", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus, fermentum sed consectetur ut, malesuada vel felis.")
+				.advice-support--main
+					.advice-support--items
+						+post2("#", "img/support1.jpg", "ABOUT US", "Getting started", support1)
+					.advice-support--items
+						+post("#", "img/support2.jpg", "HOW IT WORKS", "Understanding home care", support1, "Jul 8, 2019")
+					.advice-support--items
+						+post("#", "img/support1.jpg", "SPECIALIST CARE", "Choosing the right care for your loved ones", support1, "Jul 8, 2019")
+
+		section.advice-support--categories
+			.container
+				h3.head-categories Advice & support categories
+				.advice-support--main
+					.advice-support--items
+						+categories("img/categories1.jpg", "Getting started", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus.")
+					.advice-support--items
+						+categories("img/categories1.jpg", "Understanding home care", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus.")
+					.advice-support--items
+						+categories("img/categories1.jpg", "Ageing well", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus.")
+					.advice-support--items
+						+categories("img/categories1.jpg", "Lorem ipsum dolor sit amet,", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus.")
+					.advice-support--items
+						+categories("img/categories1.jpg", "Lorem ipsum dolor sit amet,", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus.")
+					.advice-support--items
+						+categories("img/categories1.jpg", "Lorem ipsum dolor sit amet,", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris tellus.")
+
+		.height-68
+
+		include include/block/looking-care
+		include include/block/subscribe

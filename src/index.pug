@@ -1,0 +1,262 @@
+extends layout.pug
+
+block variab
+	- var titlePage = 'Home page'
+	- var headers = true
+
+block header
+	include include/header
+
+	.header-content
+		.container
+			include include/header/content-one
+
+block main
+	main.section_main
+		
+		//- .container
+		//- 	.popup-step.zoom-anim-dialog#step-form
+		//- 		.custom-close
+		//- 			| Close
+		//- 			svg(width="35" height="35" viewBox="0 0 35 35").icon-close
+		//- 				use(xlink:href="img/icon-svg/sprite-icon.svg#close")
+		//- 		.container-popup
+		//- 			+heading("FIND A CARER", "Find a trusted, local carer today", "Simply let us know about the care you need, and we can match you with the most suitable carers for you.")
+
+		//- 			.wrapper--form-step
+		//- 				.form-step--items.step-hide(data-step="15")
+		//- 					.step-one
+		//- 						h4 I’m looking for care for…
+		//- 						.step-radio--wrapper
+		//- 							label.radio
+		//- 								input(type="radio" name="radio" required="")
+		//- 								p.radio__text Myself
+		//- 							label.radio
+		//- 								input(type="radio" name="radio" checked required="")
+		//- 								p.radio__text Someone else
+
+		//- 				.form-step--items.step-hide(data-step="7")
+		//- 					.strep-two
+		//- 						h4 I would like to arrange care for my…
+		//- 						.select-form
+		//- 							.custom-select.select-step
+		//- 								select
+		//- 									option(value="") Mother
+		//- 									option(value="") Father
+		//- 									option(value="") Mother-in-law
+		//- 									option(value="") Father-in-law
+		//- 									option(value="") Brother
+		//- 									option(value="") Sister
+		//- 									option(value="") Grandparent
+		//- 									option(value="") Neighbour
+		//- 									option(value="") Friend
+		//- 									option(value="") Husband
+		//- 									option(value="") Wife
+		//- 									option(value="") Other
+						
+		//- 				.form-step--items.step-hide(data-step="8")
+		//- 					.strep-three
+		//- 						h4 How mobile is your mother?
+		//- 						.radio-parents
+		//- 							.radio-parents--items
+		//- 								label.radio.radio-big
+		//- 									input(type="radio" name="radio-three" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/icon-radio1.svg", alt="")
+		//- 										| Very active
+		//- 							.radio-parents--items
+		//- 								label.radio.radio-big
+		//- 									input(type="radio" name="radio-three" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/icon-radio2.svg", alt="")
+		//- 										| Quite active
+		//- 							.radio-parents--items
+		//- 								label.radio.radio-big
+		//- 									input(type="radio" name="radio-three" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/icon-radio3.svg", alt="")
+		//- 										| Limited mobility
+		//- 							.radio-parents--items
+		//- 								label.radio.radio-big
+		//- 									input(type="radio" name="radio-three" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/icon-radio4.svg", alt="")
+		//- 										| Wheelchair user
+		//- 							.radio-parents--items
+		//- 								label.radio.radio-big
+		//- 									input(type="radio" name="radio-three" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/icon-radio5.svg", alt="")
+		//- 										| Bedbound
+								
+		//- 				.form-step--items(data-step="15")
+		//- 					.strep-four
+		//- 						.what-care--heading
+		//- 							h4 And what types of care are you looking for?
+		//- 							p Select as many as appropriate
+		//- 						.radio--what-care
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care1.svg", alt="")
+		//- 										| Personal care hygiene
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care2.svg", alt="")
+		//- 										| Dementia 
+		//- 										br
+		//- 										| care
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care3.svg", alt="")
+		//- 										| General home help
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care4.svg", alt="")
+		//- 										| Companionship
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care5.svg", alt="")
+		//- 										| Food preparation
+		//- 										br
+		//- 										| & Shopping
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care6.svg", alt="")
+		//- 										| Transportation
+		//- 										br
+		//- 										| & Errands
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care7.svg", alt="")
+		//- 										| Gardening &
+		//- 										br
+		//- 										| House Maintenance
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-four" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/what-care8.svg", alt="")
+		//- 										| Paperwork & 
+		//- 										br
+		//- 										| Administration
+
+		//- 				.form-step--items(data-step="5")
+		//- 					.strep-five
+		//- 						h4 Would you like a carer to visit…
+		//- 						.radio--what-care
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-five" checked required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/carer-visit1.svg", alt="")
+		//- 										| Hourly
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-five" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/carer-visit2.svg", alt="")
+		//- 										| Overnight
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-five" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/carer-visit3.svg", alt="")
+		//- 										| Live-in
+		//- 							.what-care--items
+		//- 								label.radio.radio-what-care
+		//- 									input(type="radio" name="radio-five" required="")
+		//- 									p.radio__text
+		//- 										span.radio-icon
+		//- 											img(src="img/form-step/carer-visit4.svg", alt="")
+		//- 										| I’m not sure
+
+		//- 				.form-step--items(data-step="10")
+		//- 					.strep-six
+		//- 						h4 What’s the postcode of the care recipient?
+		//- 						.customs-input.add-left--icon
+		//- 							input(placeholder="enter postcode")
+		//- 							.icon-figure
+		//- 								svg(width="9" height="13" viewBox="0 0 9 13").icon-location
+		//- 									use(xlink:href="img/icon-svg/sprite-icon.svg#icon-location")
+
+		//- 				.form-step--items(data-step="10")
+		//- 					.strep-seven
+		//- 						h4 Please may we know your first name?
+		//- 						.customs-input
+		//- 							input(placeholder="first name")
+
+		//- 				.form-step--items(data-step="10")
+		//- 					.strep-eight
+		//- 						h4 and your last name?
+		//- 						.customs-input
+		//- 							input(placeholder="last name")
+
+		//- 				.form-step--items(data-step="10")
+		//- 					.strep-nine
+		//- 						h4 email address
+		//- 						.customs-input.add-left--icon
+		//- 							input(placeholder="email address")
+		//- 							.icon-figure
+		//- 								svg(width="22" height="16" viewBox="0 0 22 16").icon-message
+		//- 									use(xlink:href="img/icon-svg/sprite-icon.svg#icon-message")
+
+		//- 				.form-step--items(data-step="10")
+		//- 					.strep-nine
+		//- 						h4 Finally, what’s the best phone number to reach you on
+		//- 						.customs-input.add-left--icon
+		//- 							input(placeholder="phone number")
+		//- 							.icon-figure
+		//- 								svg(width="20" height="20" viewBox="0 0 20 20").icon-phone
+		//- 									use(xlink:href="img/icon-svg/sprite-icon.svg#icon-phone")
+		//- 						.check-box--default
+		//- 							label.checkbox
+		//- 								input(type="checkbox" required="")
+		//- 								p.checkbox__text I received too many emails from SpriggHR.
+
+		//- 			.step-navigation
+		//- 				button.btn.btn-white.size-btn.prev-steps
+		//- 					span previous
+		//- 				button.btn.btn-darkGreen.size-btn.next-steps
+		//- 					span next
+
+		//- 			.wrapper--load-step
+		//- 				p
+		//- 					span.count-step 15% 
+		//- 					| completed
+		//- 				#loading-step
+		//- 					span
+
+		include include/block/index-trust
+		include include/block/looking-care
+		include include/block/index-steps
+		include include/block/subscribe

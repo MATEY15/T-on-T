@@ -1,0 +1,65 @@
+-var linksFoot1 = [{link: "#", name: "Hourly care"},{link: "#", name: "Overnight care"},{link: "#", name: "Live-in care"},{link: "#", name: "Our locations"}]
+-var linksFoot2 = [{link: "#", name: "Personal care"},{link: "#", name: "Dementia care"},{link: "#", name: "Alzheimers care"},{link: "#", name: "Respite care"},{link: "#", name: "End of life care"},{link: "#", name: "Cancer care"},{link: "#", name: "Companionship care"}]
+-var linksFoot3 = [{link: "#", name: "Getting started"},{link: "#", name: "Ageing well"},{link: "#", name: "FAQ"},{link: "#", name: "Category"}]
+-var linksFoot4 = [{link: "#", name: "Mission & vision"},{link: "#", name: "Our carers"},{link: "#", name: "Caree jobs"},{link: "#", name: "Our team"},{link: "#", name: "Partners"}]
+
+footer.footer
+	.footer-top
+		.container-footer.flex--footer-top
+			.footer-menu
+				.footer-menu--items(style="width:250px;")
+					h6 Home care services
+					+footerMenu(linksFoot1)
+				.footer-menu--items(style="width:210px;")
+					h6 Specialist care
+					+footerMenu(linksFoot2)
+				.footer-menu--items(style="width:232px;")
+					h6 Advice & Support
+					+footerMenu(linksFoot3)
+				.footer-menu--items(style="width:223px;")
+					h6 About us
+					+footerMenu(linksFoot4)
+			.footer-info
+				.footer-logo
+					a(href="#")
+						img(src="img/logo-head.svg", alt="", width="200px")
+				.footer-contact
+					ul
+						li
+							a(href="tel:08082781112") Freephone 0808 278 1112
+						li
+							a(href="tomail:info@trustontap.com") info@trustontap.com
+				.foot-description
+					h6 Registered address:
+					p Lovegroves Farm,
+						br
+						| Long Wittenham,
+						br
+						| Oxfordshire, OX14 4QQ
+				.sicial-footer
+					ul
+						li
+							a(href="#")
+								svg(width="30" height="30" viewBox="0 0 30 30").icon-facebook
+									use(xlink:href="img/icon-svg/sprite-icon.svg#icon-facebook")
+						li
+							a(href="#")
+								+sprite('30', '30', '0 0 30 30', 'icon-twitter')
+
+	.footer-bottom
+		.container.flex--footer-bottom
+			.copiright
+				p © 2019 All rights reserved TrustonTap.
+			.bottom-menu
+				ul
+					li
+						a(href="#") Privacy policy
+					li
+						a(href="#") Acceptible use policy
+					li
+						a(href="#") terms & conditions
+			.button-foot--mobile
+				a(href="#").btn.btn-darkGreen.size-btn
+					span Call me back
+				a(href="#").btn.btn-green.size-btn
+					span Find a carer
